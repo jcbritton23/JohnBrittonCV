@@ -1,34 +1,14 @@
-# 🚀 CV Website Deployment Guide
+# Deployment Guide for JohnBrittonCV
 
-## Overview
+## Repository
 
-This guide provides step-by-step instructions for deploying John Britton's CV website using **free** GitHub Pages hosting with automated CI/CD pipeline.
+- GitHub: [https://github.com/jcbritton23/JohnBrittonCV](https://github.com/jcbritton23/JohnBrittonCV)
 
-## 🎯 Deployment Options
+## GitHub Pages Deployment
 
-### Option 1: GitHub Pages (Recommended - FREE)
-- **Cost**: $0/month
-- **Custom Domain**: Supported
-- **SSL**: Automatic
-- **CI/CD**: GitHub Actions
-- **Bandwidth**: 100GB/month
-- **Storage**: 1GB
-
-### Option 2: Netlify (Alternative - FREE)
-- **Cost**: $0/month
-- **Custom Domain**: Supported
-- **SSL**: Automatic
-- **CI/CD**: Built-in
-- **Bandwidth**: 100GB/month
-- **Build Minutes**: 300/month
-
-### Option 3: Vercel (Alternative - FREE)
-- **Cost**: $0/month
-- **Custom Domain**: Supported
-- **SSL**: Automatic
-- **CI/CD**: Built-in
-- **Bandwidth**: 100GB/month
-- **Build Minutes**: 6000/month
+- Go to Settings > Pages in your repo.
+- Set source to `main` branch, `/ (root)` folder.
+- Your site will be published at: [https://jcbritton23.github.io/JohnBrittonCV/](https://jcbritton23.github.io/JohnBrittonCV/)
 
 ---
 

@@ -1,6 +1,14 @@
-# John Britton's Interactive CV Website
+# JohnBrittonCV
 
-A modern, interactive CV website built with React, TypeScript, and Tailwind CSS. Features an AI-powered chatbot for answering questions about John's background and experience.
+Interactive CV and chatbot for John Britton, doctoral psychology student.
+
+## Repository
+
+This project is hosted at: [https://github.com/jcbritton23/JohnBrittonCV](https://github.com/jcbritton23/JohnBrittonCV)
+
+## Live Site
+
+Once deployed, the site will be available at: [https://jcbritton23.github.io/JohnBrittonCV/](https://jcbritton23.github.io/JohnBrittonCV/)
 
 ## 🚀 Quick Start
 

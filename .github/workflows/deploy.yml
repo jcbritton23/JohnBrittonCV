@@ -9,6 +9,9 @@ on:
 jobs:
   test:
     runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      VITE_OPENAI_API_KEY: ${{ secrets.VITE_OPENAI_API_KEY }}
     steps:
     - uses: actions/checkout@v4
     
@@ -33,6 +36,9 @@ jobs:
   deploy:
     needs: test
     runs-on: ubuntu-latest
+    env:
+      OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+      VITE_OPENAI_API_KEY: ${{ secrets.VITE_OPENAI_API_KEY }}
     if: github.ref == 'refs/heads/main'
     
     permissions:

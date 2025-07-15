@@ -424,3 +424,49 @@ The data structure is consumed by:
 - `src/types/index.ts`: TypeScript type definitions
 
 Each section is rendered with appropriate styling and formatting to match APA/APPIC standards while maintaining responsive design and accessibility features. 
+
+---
+
+## Step-by-Step: Add a GitHub Secret
+
+1. **Go to your repository on GitHub:**  
+   [https://github.com/jcbritton23/JohnBrittonCV](https://github.com/jcbritton23/JohnBrittonCV)
+
+2. **Click on “Settings”**  
+   (You’ll find this tab at the top of your repo page.)
+
+3. **In the left sidebar, click “Secrets and variables” → “Actions”**  
+   (It may just say “Secrets” in some UI versions.)
+
+4. **Click the “New repository secret” button.**
+
+5. **Fill in the form:**
+   - **Name:**  
+     For frontend: `VITE_OPENAI_API_KEY`  
+     For backend: `OPENAI_API_KEY`  
+     (Use whichever your code expects, or both if needed.)
+   - **Value:**  
+     Paste your actual API key (e.g., `sk-...`).
+
+6. **Click “Add secret”** to save.
+
+---
+
+### Repeat for any other secrets you need (e.g., if you have both frontend and backend keys).
+
+---
+
+## After Adding the Secret
+
+- In your GitHub Actions workflow, reference the secret like this:
+  ```yaml
+  env:
+    VITE_OPENAI_API_KEY: ${{ secrets.VITE_OPENAI_API_KEY }}
+    OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+  ```
+- Your code will access it via `process.env.VITE_OPENAI_API_KEY` or `process.env.OPENAI_API_KEY` (backend).
+
+---
+
+**That’s it!**  
+Let me know if you want a screenshot or if you’d like me to check your workflow file for correct usage. 
