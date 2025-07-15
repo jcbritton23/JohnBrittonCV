@@ -1,0 +1,13 @@
+{
+  "watch": ["server.js"],
+  "ignore": [
+    "**/node_modules/**",
+    "**/.git/**",
+    "**/.vite/**",
+    "src/**",
+    "dist/**",
+    "public/**"
+  ],
+  "ext": "js,json",
+  "signal": "SIGTERM"
+} 

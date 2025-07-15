@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Primary */
+  --primary-blue: #1e3a8a;
+  --secondary-blue: #3b82f6;
+  --accent-gold: #f59e0b;
+
+  /* Neutrals */
+  --text-primary: #111827;
+  --text-secondary: #6b7280;
+  --background: #ffffff;
+  --surface: #f8fafc;
+  --border: #e5e7eb;
+
+  /* Semantic */
+  --success: #10b981;
+  --warning: #f59e0b;
+  --error: #ef4444;
+  --info: #3b82f6;
+
+  /* Shadows */
+  --shadow-sm: 0 1px 2px 0 rgba(0,0,0,.05);
+  --shadow: 0 4px 6px -1px rgba(0,0,0,.1);
+  --shadow-lg: 0 10px 15px -3px rgba(0,0,0,.1);
+  --shadow-xl: 0 20px 25px -5px rgba(0,0,0,.1);
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+body {
+  color: var(--text-primary);
+  background: var(--background);
+  line-height: 1.625;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* CV-specific styles */
+.cv-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cv-section {
+  margin-bottom: 2rem;
+}
+
+.cv-bullet {
+  position: relative;
+  padding-left: 1.5rem;
+  text-indent: -1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.cv-bullet::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: var(--primary-blue);
+  font-weight: bold;
+}
+
+.cv-date {
+  text-align: right;
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.cv-institution {
+  font-weight: 500;
+  color: var(--text-secondary);
+}
+
+.cv-location {
+  color: var(--text-secondary);
+  font-style: italic;
+}
+
+.cv-supervisor {
+  color: var(--text-secondary);
+  font-size: 0.875rem;
+}
+
+/* APA-style hanging indent for bullet points */
+.cv-hanging-indent {
+  text-indent: -1.5rem;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+}
+
+/* Bullet list without default list styling */
+.cv-bullet-list {
+  list-style: none;
+  padding-left: 0;
+  margin-left: 1rem;
+}
+
+.cv-bullet-list li {
+  position: relative;
+  padding-left: 1.5rem;
+  margin-bottom: 0.5rem;
+  text-indent: 0;
+}
+
+.cv-bullet-list li::before {
+  content: "•";
+  position: absolute;
+  left: 0;
+  color: #374151;
+  font-weight: normal;
+}
+
+/* Professional section headers */
+.cv-section-header {
+  border-bottom: 2px solid var(--border);
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
+}
+
+/* Date alignment for APA format */
+.cv-date-right {
+  text-align: right;
+  color: var(--text-secondary);
+  font-weight: 500;
+  min-width: 140px;
+  flex-shrink: 0;
+}
+
+/* Print styles */
+@media print {
+  nav, aside { display: none !important; }
+  header { box-shadow: none; }
+  a[href]:after { content: ""; }
+  body { font-size: 12pt; line-height: 1.4; }
+  
+  .cv-content {
+    max-width: none;
+    margin: 0;
+  }
+  
+  .cv-bullet {
+    padding-left: 1rem;
+  }
+}
+
+/* Focus styles for accessibility */
+*:focus {
+  outline: 2px solid var(--secondary-blue);
+  outline-offset: 2px;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--surface);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-secondary);
+} 
