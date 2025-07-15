@@ -35,6 +35,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ cvData }) => {
     try {
       // Use VITE_BACKEND_URL for API base
       const apiBase = (import.meta as any).env.VITE_BACKEND_URL || '';
+      console.log('DEBUG: VITE_BACKEND_URL at runtime:', apiBase);
       const response = await fetch(`${apiBase}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
