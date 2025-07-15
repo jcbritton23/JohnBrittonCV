@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
 import { CVData, ChatMessage } from '../types';
 import { Send } from 'lucide-react';
+import { simpleGenerateAnswer } from '../utils/answer';
 
 interface ChatbotProps {
   cvData: CVData;
@@ -32,7 +33,9 @@ const Chatbot: React.FC<ChatbotProps> = ({ cvData }) => {
     setIsLoading(true);
 
     try {
-      const response = await fetch('/api/chat', {
+      // Use VITE_BACKEND_URL for API base
+      const apiBase = (import.meta as any).env.VITE_BACKEND_URL || '';
+      const response = await fetch(`${apiBase}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: inputValue })
@@ -44,8 +47,6 @@ const Chatbot: React.FC<ChatbotProps> = ({ cvData }) => {
     }
     setIsLoading(false);
   };
-
-
 
   const formatTimestamp = (timestamp: Date): string => {
     return timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
