@@ -12,6 +12,7 @@ jobs:
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       VITE_OPENAI_API_KEY: ${{ secrets.VITE_OPENAI_API_KEY }}
+      VITE_BACKEND_URL: ${{ vars.VITE_BACKEND_URL }}
     steps:
     - uses: actions/checkout@v4
     
@@ -29,6 +30,8 @@ jobs:
     
     - name: Build project
       run: npm run build
+      env:
+        VITE_BACKEND_URL: ${{ vars.VITE_BACKEND_URL }}
 
   deploy:
     needs: test
@@ -36,6 +39,7 @@ jobs:
     env:
       OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
       VITE_OPENAI_API_KEY: ${{ secrets.VITE_OPENAI_API_KEY }}
+      VITE_BACKEND_URL: ${{ vars.VITE_BACKEND_URL }}
     if: github.ref == 'refs/heads/main'
     
     permissions:
@@ -61,6 +65,8 @@ jobs:
     
     - name: Build project
       run: npm run build
+      env:
+        VITE_BACKEND_URL: ${{ vars.VITE_BACKEND_URL }}
     
     - name: Setup Pages
       uses: actions/configure-pages@v4
