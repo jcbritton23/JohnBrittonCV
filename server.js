@@ -29,6 +29,8 @@ const openai = new OpenAI({
   apiKey: process.env.VITE_OPENAI_API_KEY
 });
 
+const MODEL = 'gpt-4o-mini';
+
 // Backend safety filtering (adapted from src/utils/safety.ts)
 const ACCEPTABLE_TOPICS = [
   // Core professional topics
@@ -313,7 +315,7 @@ app.post('/api/chat', async (req, res) => {
     }
     
     const completion = await openai.chat.completions.create({
-      model: "gpt-3.5-turbo",
+      model: MODEL,
       messages: [
         { role: "system", content: systemPrompt },
         { role: "user", content: sanitizedMessage }
