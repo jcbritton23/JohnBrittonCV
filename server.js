@@ -31,6 +31,26 @@ const openai = new OpenAI({
 
 const MODEL = 'gpt-4o-mini';
 
+const formatResponse = (text) => {
+  const sentences = text.split(/(?<=[.!?])\s+/);
+  const paragraphs = [];
+  let current = [];
+
+  for (const sentence of sentences) {
+    current.push(sentence);
+    if (current.length >= 2) {
+      paragraphs.push(current.join(' '));
+      current = [];
+    }
+  }
+
+  if (current.length) {
+    paragraphs.push(current.join(' '));
+  }
+
+  return paragraphs.join('\n\n');
+};
+
 // Backend safety filtering (adapted from src/utils/safety.ts)
 const ACCEPTABLE_TOPICS = [
   // Core professional topics
@@ -252,7 +272,7 @@ app.post('/api/chat', async (req, res) => {
     const sanitizedMessage = safetyResult.sanitizedQuery;
     
     // Create comprehensive system prompt with complete CV context
-    let systemPrompt = "You are a helpful assistant that answers questions about John Britton's professional background and qualifications for psychology internships. CRITICAL: Keep responses concise, scannable, and conversational. Use short paragraphs (2-3 sentences max), bullet points when helpful, and get straight to the point. Match the tone of a knowledgeable colleague giving quick, direct answers. MOST IMPORTANT: Always include specific evidence from John's CV - mention specific organizations, dates, supervisors, protocols, or concrete examples. Don't give generic answers - pull actual details to support your points.";
+    let systemPrompt = "You are a helpful assistant that answers questions about John Britton's professional background and qualifications for psychology internships. CRITICAL: Keep responses concise, scannable, and conversational. Organize the answer by theme using short paragraphs (2-3 sentences) separated by blank lines. Use bullet points when helpful, and get straight to the point. Match the tone of a knowledgeable colleague giving quick, direct answers. MOST IMPORTANT: Always include specific evidence from John's CV - mention specific organizations, dates, supervisors, protocols, or concrete examples. Don't give generic answers - pull actual details to support your points.";
     
     if (cvData) {
       systemPrompt += `\n\nJohn Britton Professional Profile:\n\n`;
@@ -311,7 +331,7 @@ app.post('/api/chat', async (req, res) => {
         }
       });
       
-      systemPrompt += `RESPONSE STYLE: Answer directly and concisely. Use bullet points for lists. Keep paragraphs short (2-3 sentences). Be conversational but professional. Focus on the most relevant information for each question. ALWAYS include specific evidence: mention exact organizations (like "Clay City Center for Family Medicine"), dates ("June 2025-present"), supervisors ("Thomas Rea, Psy.D., HSPP"), specific protocols ("CBT for Chronic Pain", "EMDR"), or concrete examples. Replace generic statements with specific details from the CV data above.`;
+      systemPrompt += `RESPONSE STYLE: Answer directly and concisely. Use bullet points for lists. Keep paragraphs short (2-3 sentences) and theme-based, separated by blank lines. Be conversational but professional. Focus on the most relevant information for each question. ALWAYS include specific evidence: mention exact organizations (like "Clay City Center for Family Medicine"), dates ("June 2025-present"), supervisors ("Thomas Rea, Psy.D., HSPP"), specific protocols ("CBT for Chronic Pain", "EMDR"), or concrete examples. Replace generic statements with specific details from the CV data above.`;
     }
     
     const completion = await openai.chat.completions.create({
@@ -321,8 +341,9 @@ app.post('/api/chat', async (req, res) => {
         { role: "user", content: sanitizedMessage }
       ],
     });
-    
-    const answer = completion.choices[0].message.content;
+
+    const rawAnswer = completion.choices[0].message.content;
+    const answer = formatResponse(rawAnswer);
     res.json({ answer });
   } catch (error) {
     console.error('OpenAI Error:', error.message);
