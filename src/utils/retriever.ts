@@ -9,127 +9,33 @@ export interface SearchResult {
 }
 
 /**
- * Creates searchable chunks from the raw CV JSON data.
- * This function iterates over all sections of the CV and flattens them into a single
- * array of "chunks" that can be searched for relevant information.
+ * Generates searchable chunks from any section of the CV JSON.
+ * Each object or sub-section becomes a chunk so every CV detail is discoverable.
  */
 export const createChunks = (cvData: CVData): Chunk[] => {
   const chunks: Chunk[] = [];
   let chunkId = 0;
 
-  // Helper to create a chunk and add it to the list
   const addChunk = (content: string, section: string, source: string) => {
-    chunks.push({
-      id: `chunk-${chunkId++}`,
-      content,
-      section,
-      source,
-      score: 0,
-    });
+    chunks.push({ id: `chunk-${chunkId++}`, content, section, source, score: 0 });
   };
 
-  // 1. Personal Info
-  if (cvData.personalInfo) {
-    const { name, address, phone, email } = cvData.personalInfo;
-    addChunk(
-      `Contact Information for ${name}: Address is ${address}, Phone is ${phone}, Email is ${email}.`,
-      'personalInfo',
-      'Personal Info'
-    );
-  }
-
-  // 2. Education
-  if (cvData.education) {
-    cvData.education.forEach((edu) => {
-      addChunk(
-        `${edu.degree} from ${edu.institution} (${edu.location}), expected ${edu.date}. ${edu.details || ''}`,
-        'education',
-        `Education: ${edu.degree}`
-      );
-    });
-  }
-
-  // 3. Supervised Clinical Experience
-  if (cvData.supervisedClinicalExperience) {
-    cvData.supervisedClinicalExperience.forEach((exp) => {
-      const supervisor = exp.supervisor || (Array.isArray(exp.supervisors) ? exp.supervisors.join(', ') : exp.supervisors) || 'N/A';
-      const baseInfo = `${exp.position} at ${exp.organization} (${exp.location}) from ${exp.dates}, supervised by ${supervisor}.`;
-      addChunk(baseInfo, 'supervisedClinicalExperience', `Clinical Experience: ${exp.organization}`);
-      if (exp.responsibilities) {
-        exp.responsibilities.forEach((resp) => {
-          addChunk(`${baseInfo} Responsibility: ${resp}`, 'supervisedClinicalExperience', `Clinical Experience: ${exp.organization}`);
+  Object.entries(cvData as Record<string, any>).forEach(([section, value]) => {
+    if (Array.isArray(value)) {
+      value.forEach((item: any) => {
+        const source = item.organization || item.title || item.name || section;
+        const parts: string[] = [];
+        Object.entries(item).forEach(([key, val]) => {
+          if (Array.isArray(val)) parts.push(`${key}: ${val.join(', ')}`);
+          else parts.push(`${key}: ${val}`);
         });
-      }
-    });
-  }
-
-  // 4. Evidence-Based Protocols
-  if (cvData.evidenceBasedProtocols) {
-    Object.entries(cvData.evidenceBasedProtocols).forEach(([category, protocols]) => {
-      if (Array.isArray(protocols)) {
-        addChunk(
-          `Trained in ${category.replace(/([A-Z])/g, ' $1')} protocols: ${protocols.join(', ')}.`,
-          'evidenceBasedProtocols',
-          `Evidence-Based Protocols: ${category}`
-        );
-      }
-    });
-  }
-
-  // 5. Supervisory Experience
-  if (cvData.supervisoryExperience) {
-    cvData.supervisoryExperience.forEach((exp) => {
-        const baseInfo = `Peer Supervisor at ${exp.organization} from ${exp.dates}, supervised by ${exp.supervisor}.`;
-        addChunk(baseInfo, 'supervisoryExperience', `Supervisory Experience: ${exp.organization}`);
-        if(exp.responsibilities) {
-            exp.responsibilities.forEach((resp) => {
-                addChunk(`${baseInfo} Responsibility: ${resp}`, 'supervisoryExperience', `Supervisory Experience: ${exp.organization}`);
-            });
-        }
-    });
-  }
-
-  // Add other sections similarly...
-  // Research, Teaching, Honors, Presentations, etc.
-
-  // 6. Research Experience
-  if (cvData.researchExperience) {
-    cvData.researchExperience.forEach((exp) => {
-      const supervisor = exp.supervisor || exp.chair || 'N/A';
-      const baseInfo = `${exp.title || exp.type} at ${exp.institution} (${exp.dates}), supervised by ${supervisor}.`;
-      addChunk(baseInfo, 'researchExperience', `Research: ${exp.title || exp.type}`);
-      if (exp.description) {
-        exp.description.forEach((desc) => {
-          addChunk(`${baseInfo} Description: ${desc}`, 'researchExperience', `Research: ${exp.title || exp.type}`);
-        });
-      }
-    });
-  }
-
-  // 7. Teaching Experience
-  if (cvData.teachingExperience) {
-      cvData.teachingExperience.forEach((exp) => {
-          const baseInfo = `${exp.position} for ${exp.course} at ${exp.institution} (${exp.dates}).`;
-          addChunk(baseInfo, 'teachingExperience', `Teaching: ${exp.course}`);
-          if (exp.description) {
-              exp.description.forEach((desc) => {
-                  addChunk(`${baseInfo} Description: ${desc}`, 'teachingExperience', `Teaching: ${exp.course}`);
-              });
-          }
+        addChunk(parts.join('. '), section, source);
       });
-  }
-
-  // 8. References
-  if (cvData.references) {
-    cvData.references.forEach((ref) => {
-      addChunk(
-        `Reference: ${ref.name}, ${ref.title} at ${ref.organization}. Contact: ${ref.email}, ${ref.phone}`,
-        'references',
-        `Reference: ${ref.name}`
-      );
-    });
-  }
-
+    } else if (typeof value === 'object' && value !== null) {
+      const parts = Object.entries(value).map(([k, v]) => `${k}: ${v}`);
+      addChunk(parts.join('. '), section, section);
+    }
+  });
 
   return chunks;
 };

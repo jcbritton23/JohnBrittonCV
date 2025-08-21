@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
+import ReactMarkdown from 'react-markdown';
 import { CVData, ChatMessage } from '../types';
 import { Send } from 'lucide-react';
-import { simpleGenerateAnswer } from '../utils/answer';
 
 interface ChatbotProps {
   cvData: CVData;
@@ -78,7 +78,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ cvData }) => {
                   : 'bg-gray-100 text-gray-900'
               }`}
             >
-              <p className="text-sm whitespace-pre-wrap">{message.content}</p>
+              <ReactMarkdown className="text-sm">{message.content}</ReactMarkdown>
               <span className="text-xs opacity-70 mt-1 block">
                 {formatTimestamp(message.timestamp)}
               </span>
