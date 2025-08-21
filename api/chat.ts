@@ -7,6 +7,21 @@ import cvData from '../cv_json_data.json';
 const openai = new OpenAI({ apiKey: process.env.VITE_OPENAI_API_KEY });
 const MODEL = 'gpt-4o-mini';
 
+const formatResponse = (text: string) => {
+  const sentences = text.split(/(?<=[.!?])\s+/);
+  const paragraphs: string[] = [];
+  let current: string[] = [];
+  for (const sentence of sentences) {
+    current.push(sentence);
+    if (current.length >= 2) {
+      paragraphs.push(current.join(' '));
+      current = [];
+    }
+  }
+  if (current.length) paragraphs.push(current.join(' '));
+  return paragraphs.join('\n\n');
+};
+
 export default async function handler(req, res) {
   if (req.method !== 'POST') {
     return res.status(405).json({ error: 'Method not allowed' });
@@ -24,12 +39,12 @@ export default async function handler(req, res) {
   }
 
   // Retrieve relevant CV context
-  const chunks = await getRelevantChunks(query, cvData);
+  const chunks = await getRelevantChunks(safety.sanitizedQuery, cvData);
   const context = chunks.map(chunk => chunk.content).join('\n');
   const sources = chunks.map(chunk => chunk.source);
 
   // Compose prompt
-  const prompt = `You are an expert assistant answering questions about John Britton's CV. Use only the provided context. Cite sources if possible.\n\nContext:\n${context}\n\nUser question: ${query}`;
+  const prompt = `You are an expert assistant answering questions about John Britton's CV. Use only the provided context. Cite sources if possible.\n\nContext:\n${context}\n\nUser question: ${safety.sanitizedQuery}`;
 
   try {
     const completion = await openai.chat.completions.create({
@@ -41,7 +56,8 @@ export default async function handler(req, res) {
       max_tokens: 300,
       temperature: 0.4
     });
-    const answer = completion.choices[0]?.message?.content || '';
+    const raw = completion.choices[0]?.message?.content || '';
+    const answer = formatResponse(raw);
     return res.status(200).json({ answer, sources });
   } catch (error) {
     console.error('OpenAI error:', error);
