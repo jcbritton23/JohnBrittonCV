@@ -136,6 +136,12 @@ app.post('/api/chat', async (req, res) => {
   }
 });
 
+const __dirname = path.resolve();
+app.use(express.static(path.join(__dirname, 'dist')));
+app.use((_, res) =>
+  res.sendFile(path.join(__dirname, 'dist', 'index.html'))
+);
+
 const PORT = 5050;
 app.listen(PORT, () => {
   console.log(`Backend server listening on http://localhost:${PORT}`);
