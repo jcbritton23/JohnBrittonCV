@@ -138,7 +138,7 @@ app.post('/api/chat', async (req, res) => {
 
 const __dirname = path.resolve();
 app.use(express.static(path.join(__dirname, 'dist')));
-// Fallback to index.html for any unmatched routes (required for Express 5)
+// Serve index.html for any unmatched route (Express 5 catch-all)
 app.use((_, res) =>
   res.sendFile(path.join(__dirname, 'dist', 'index.html'))
 );
