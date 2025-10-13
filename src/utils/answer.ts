@@ -5,6 +5,26 @@ import OpenAI from 'openai';
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
 const MODEL = 'gpt-5-nano';
 
+const extractResponseText = (response: any): string => {
+  if (!response) return '';
+  if (typeof response.output_text === 'string' && response.output_text.trim()) {
+    return response.output_text;
+  }
+  const output = response.output;
+  if (Array.isArray(output)) {
+    for (const item of output) {
+      if (Array.isArray(item.content)) {
+        for (const part of item.content) {
+          if (typeof part.text === 'string' && part.text.trim()) {
+            return part.text;
+          }
+        }
+      }
+    }
+  }
+  return '';
+};
+
 export async function simpleGenerateAnswer(question: string, cvData: any) {
   const safetyResult = sanitizeQuery(question);
   if (!safetyResult.isSafe) {
@@ -14,14 +34,24 @@ export async function simpleGenerateAnswer(question: string, cvData: any) {
   const context = chunks.map(chunk => chunk.content).join('\n');
   const sources = chunks.map(chunk => chunk.source);
   const prompt = `You are an expert assistant answering questions about John Britton's CV. Use only the provided context. Cite sources if possible.\n\nContext:\n${context}\n\nUser question: ${question}`;
-  const completion = await openai.chat.completions.create({
+  const completion = await openai.responses.create({
     model: MODEL,
-    messages: [
-      { role: 'system', content: 'You are a helpful assistant for CV Q&A.' },
-      { role: 'user', content: prompt }
+    input: [
+      {
+        role: 'system',
+        content: [
+          { type: 'text', text: 'You are a helpful assistant for CV Q&A.' }
+        ]
+      },
+      {
+        role: 'user',
+        content: [
+          { type: 'text', text: prompt }
+        ]
+      }
     ],
-    max_tokens: 300,
+    max_output_tokens: 300,
     temperature: 0.4
   });
-  return { content: completion.choices[0]?.message?.content || '', sources };
-} 
+  return { content: extractResponseText(completion), sources };
+}

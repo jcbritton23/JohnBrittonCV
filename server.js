@@ -24,6 +24,26 @@ try {
 const openai = new OpenAI({ apiKey: process.env.VITE_OPENAI_API_KEY });
 const MODEL = 'gpt-5-nano';
 
+const extractResponseText = (response) => {
+  if (!response) return '';
+  if (typeof response.output_text === 'string' && response.output_text.trim()) {
+    return response.output_text;
+  }
+  const output = response.output;
+  if (Array.isArray(output)) {
+    for (const item of output) {
+      if (Array.isArray(item.content)) {
+        for (const part of item.content) {
+          if (typeof part.text === 'string' && part.text.trim()) {
+            return part.text;
+          }
+        }
+      }
+    }
+  }
+  return '';
+};
+
 // --- Response formatter to keep paragraphs short ---
 const formatResponse = (text) => {
   const sentences = text.split(/(?<=[.!?])\s+/);
@@ -173,15 +193,27 @@ app.post('/api/chat', async (req, res) => {
 
     const systemPrompt = `You are a helpful assistant that answers questions about John Britton's professional background and qualifications. Keep responses concise, organized in short theme-based paragraphs, and use markdown when helpful. Maintain a balanced, professional tone that shares accomplishments factually without exaggeration or superlatives, and avoid phrases that imply perfection.\n\nCV context:\n${context}`;
 
-    const completion = await openai.chat.completions.create({
+    const completion = await openai.responses.create({
       model: MODEL,
-      messages: [
-        { role: 'system', content: systemPrompt },
-        { role: 'user', content: safety.sanitizedQuery }
-      ]
+      input: [
+        {
+          role: 'system',
+          content: [
+            { type: 'text', text: systemPrompt }
+          ]
+        },
+        {
+          role: 'user',
+          content: [
+            { type: 'text', text: safety.sanitizedQuery }
+          ]
+        }
+      ],
+      max_output_tokens: 300,
+      temperature: 0.4
     });
 
-    const rawAnswer = completion.choices[0].message.content;
+    const rawAnswer = extractResponseText(completion);
     const answer = formatResponse(rawAnswer);
     res.json({ answer });
   } catch (err) {
