@@ -35,13 +35,25 @@ const CVContent: React.FC<CVContentProps> = ({ cvData }) => {
           <div>{cvData.personalInfo.address}</div>
           <div>{cvData.personalInfo.phone}</div>
           <div>
-            <a 
-              href={`mailto:${cvData.personalInfo.email}`} 
+            <a
+              href={`mailto:${cvData.personalInfo.email}`}
               className="text-blue-600 hover:text-blue-800 underline"
             >
               {cvData.personalInfo.email}
             </a>
           </div>
+          {cvData.personalInfo.interactiveCV && (
+            <div>
+              <a
+                href={cvData.personalInfo.interactiveCV}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-blue-600 hover:text-blue-800 underline"
+              >
+                Interactive CV
+              </a>
+            </div>
+          )}
         </div>
       </div>
 
@@ -104,6 +116,11 @@ const CVContent: React.FC<CVContentProps> = ({ cvData }) => {
           <h2 className="text-xl font-bold text-gray-900 mb-4 border-b border-gray-300 pb-1">
             Evidence-Based Protocols
           </h2>
+          {cvData.evidenceBasedProtocols.description && (
+            <p className="text-gray-700 mb-4 leading-relaxed">
+              {cvData.evidenceBasedProtocols.description}
+            </p>
+          )}
           <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
             {/* Cognitive & Behavioral Therapies */}
             {cvData.evidenceBasedProtocols.cognitiveAndBehavioral && (
@@ -281,6 +298,12 @@ const CVContent: React.FC<CVContentProps> = ({ cvData }) => {
               <div>
                 <div className="font-semibold text-gray-900">{exp.position}</div>
                 <div className="text-gray-700">{exp.institution}{exp.location && `, ${exp.location}`}</div>
+                {exp.course && (
+                  <div className="text-gray-500 text-sm mt-1">Course: {exp.course}</div>
+                )}
+                {exp.supervisor && (
+                  <div className="text-gray-500 text-sm">Supervisor: {exp.supervisor}</div>
+                )}
               </div>
               {renderDateRight(exp.dates)}
             </div>
@@ -367,9 +390,17 @@ const CVContent: React.FC<CVContentProps> = ({ cvData }) => {
               <div>
                 <div className="font-semibold text-gray-900">{exp.position}</div>
                 <div className="text-gray-700">{exp.organization}</div>
+                {exp.location && (
+                  <div className="text-gray-600 text-sm">{exp.location}</div>
+                )}
               </div>
               {renderDateRight(exp.dates)}
             </div>
+            {exp.responsibilities && exp.responsibilities.length > 0 && (
+              <ul className="cv-bullet-list pl-6">
+                {renderBulletPoints(exp.responsibilities)}
+              </ul>
+            )}
           </div>
         ))}
       </section>
@@ -394,6 +425,11 @@ const CVContent: React.FC<CVContentProps> = ({ cvData }) => {
                   <p className="text-gray-700 text-sm leading-relaxed">
                     {tool.description}
                   </p>
+                  {tool.details && (
+                    <p className="text-gray-600 text-sm leading-relaxed mt-2">
+                      {tool.details}
+                    </p>
+                  )}
                 </div>
                   {tool.link && (
                     <div className="mt-3">

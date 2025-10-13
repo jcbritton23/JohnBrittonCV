@@ -7,6 +7,7 @@ interface CVData {
     address: string;
     phone: string;
     email: string;
+    interactiveCV?: string;
   };
   education?: Array<{
     degree: string;
@@ -25,6 +26,7 @@ interface CVData {
     responsibilities: string[];
   }>;
   evidenceBasedProtocols?: {
+    description?: string;
     cognitiveAndBehavioral?: string[];
     parentingAndChild?: string[];
     traumaFocused?: string[];
@@ -75,12 +77,14 @@ interface CVData {
     venue: string;
     type: string;
     authors: string[];
+    category?: string;
   }>;
   technologyTools?: Array<{
     name: string;
     date: string;
     description: string;
-    link: string;
+    details?: string;
+    link?: string;
   }>;
   professionalMemberships?: Array<{
     organization: string;
