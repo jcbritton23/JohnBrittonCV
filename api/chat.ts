@@ -5,7 +5,7 @@ import cvData from '../cv_json_data.json';
 
 // Use only VITE_OPENAI_API_KEY for maximum Vite compatibility
 const openai = new OpenAI({ apiKey: process.env.VITE_OPENAI_API_KEY });
-const MODEL = 'gpt-4o-mini';
+const MODEL = 'gpt-5-nano';
 
 const formatResponse = (text: string) => {
   const sentences = text.split(/(?<=[.!?])\s+/);
