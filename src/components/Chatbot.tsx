@@ -60,6 +60,7 @@ const Chatbot: React.FC<ChatbotProps> = ({ cvData }) => {
         <h3 className="font-semibold text-gray-900 mb-1">AI Assistant</h3>
         <p className="text-sm text-gray-700 mb-1">Chat with John’s CV</p>
         <p className="text-xs text-gray-400">Questions are checked for safety and answered using relevant CV info.</p>
+        <p className="text-xs text-gray-400">First response may take up to 30 seconds.</p>
       </div>
       {/* Messages */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
