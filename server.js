@@ -117,7 +117,7 @@ app.post('/api/chat', async (req, res) => {
     const relevant = getRelevantChunks(safety.sanitizedQuery);
     const context = relevant.map(c => c.content).join('\n');
 
-    const systemPrompt = `You are a helpful assistant that answers questions about John Britton's professional background and qualifications. Keep responses concise, organized in short theme-based paragraphs, and use markdown when helpful.\n\nCV context:\n${context}`;
+    const systemPrompt = `You are a helpful assistant that answers questions about John Britton's professional background and qualifications. Keep responses concise, organized in short theme-based paragraphs, and use markdown when helpful. Maintain a balanced, professional tone that shares accomplishments factually without exaggeration or superlatives, and avoid phrases that imply perfection.\n\nCV context:\n${context}`;
 
     const completion = await openai.chat.completions.create({
       model: MODEL,
