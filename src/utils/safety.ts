@@ -1,18 +1,40 @@
 import { SafetyFilter } from '../types';
 import OpenAI from 'openai';
 
-let openai: OpenAI;
-try {
-  const apiKey = (import.meta as any).env?.VITE_OPENAI_API_KEY ||
-                 (import.meta as any).env?.OPENAI_API_KEY ||
-                 process.env.REACT_APP_OPENAI_API_KEY ||
-                 process.env.OPENAI_API_KEY;
+let openai: OpenAI | null = null;
 
-  openai = new OpenAI({ apiKey, dangerouslyAllowBrowser: true });
-} catch (error) {
-  console.error('Failed to initialize OpenAI client in safety module:', error);
-  throw error;
-}
+const resolveApiKey = (): string => {
+  try {
+    const maybeEnv = (import.meta as any).env ?? {};
+    return (
+      maybeEnv.VITE_OPENAI_API_KEY ||
+      maybeEnv.OPENAI_API_KEY ||
+      process.env?.REACT_APP_OPENAI_API_KEY ||
+      process.env?.OPENAI_API_KEY ||
+      ''
+    );
+  } catch (error) {
+    console.warn('Unable to read OpenAI API key from environment:', error);
+    return '';
+  }
+};
+
+const getOpenAIClient = (): OpenAI | null => {
+  if (openai) return openai;
+  const apiKey = resolveApiKey();
+  if (!apiKey) {
+    console.warn('OpenAI API key is not configured; moderation will be skipped.');
+    return null;
+  }
+
+  try {
+    openai = new OpenAI({ apiKey, dangerouslyAllowBrowser: true });
+    return openai;
+  } catch (error) {
+    console.error('Failed to initialize OpenAI client in safety module:', error);
+    return null;
+  }
+};
 
 // Basic safety filters to block clearly harmful or sensitive queries
 const PROFANITY_WORDS: string[] = [];
@@ -60,8 +82,13 @@ export const sanitizeQuery = (query: string): SafetyFilter => {
 };
 
 export async function moderateQueryOpenAI(query: string): Promise<{ flagged: boolean; categories?: any; }> {
+  const client = getOpenAIClient();
+  if (!client) {
+    return { flagged: false };
+  }
+
   try {
-    const moderation = await openai.moderations.create({ input: query });
+    const moderation = await client.moderations.create({ input: query });
     const result = moderation.results[0];
     return { flagged: result.flagged, categories: result.categories };
   } catch (error) {
