@@ -1,5 +1,4 @@
-import React, { useState, useRef, useEffect } from 'react';
-import ReactMarkdown from 'react-markdown';
+import React, { useState, useRef, useEffect, Fragment } from 'react';
 import { CVData, ChatMessage } from '../types';
 import { Send } from 'lucide-react';
 
@@ -10,7 +9,15 @@ interface ChatbotProps {
 }
 
 const Chatbot: React.FC<ChatbotProps> = ({ cvData }) => {
-  const [messages, setMessages] = useState<ChatMessage[]>([]);
+  const [messages, setMessages] = useState<ChatMessage[]>(() => [
+    {
+      id: `assistant-${Date.now()}`,
+      role: 'assistant',
+      content:
+        "Hello! I'm John's CV assistant. I'm here with warm, concise insights into his experience, skills, and background.",
+      timestamp: new Date(),
+    },
+  ]);
   const [inputValue, setInputValue] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [processingStatus, setProcessingStatus] = useState<string>('');
@@ -28,9 +35,13 @@ const Chatbot: React.FC<ChatbotProps> = ({ cvData }) => {
     e.preventDefault();
     if (!inputValue || !inputValue.trim() || isLoading) return;
 
-    setMessages(prev => [...prev, { id: Date.now().toString(), role: 'user', content: inputValue, timestamp: new Date() }]);
+    setMessages(prev => [
+      ...prev,
+      { id: Date.now().toString(), role: 'user', content: inputValue, timestamp: new Date() },
+    ]);
     setInputValue('');
     setIsLoading(true);
+    setProcessingStatus('Crafting a response...');
 
     try {
       // Use VITE_BACKEND_URL for API base
@@ -42,15 +53,63 @@ const Chatbot: React.FC<ChatbotProps> = ({ cvData }) => {
         body: JSON.stringify({ message: inputValue })
       });
       const data = await response.json();
-      setMessages(prev => [...prev, { id: (Date.now() + 1).toString(), role: 'assistant', content: data.answer, timestamp: new Date() }]);
+      setMessages(prev => [
+        ...prev,
+        {
+          id: (Date.now() + 1).toString(),
+          role: 'assistant',
+          content: data.answer,
+          timestamp: new Date(),
+        },
+      ]);
     } catch (error) {
-      setMessages(prev => [...prev, { id: (Date.now() + 2).toString(), role: 'assistant', content: 'Error contacting backend.', timestamp: new Date() }]);
+      setMessages(prev => [
+        ...prev,
+        {
+          id: (Date.now() + 2).toString(),
+          role: 'assistant',
+          content: "Sorry, I couldn't reach the server just now. Please try again shortly.",
+          timestamp: new Date(),
+        },
+      ]);
+    } finally {
+      setIsLoading(false);
+      setProcessingStatus('');
     }
-    setIsLoading(false);
   };
 
   const formatTimestamp = (timestamp: Date): string => {
     return timestamp.toLocaleTimeString([], { hour: '2-digit', minute: '2-digit' });
+  };
+
+  const renderMessageContent = (content: string) => {
+    const paragraphs = content
+      .split(/\n{2,}/)
+      .map((paragraph) => paragraph.trim())
+      .filter(Boolean);
+
+    if (paragraphs.length === 0) {
+      return (
+        <p className="text-sm leading-relaxed whitespace-pre-line">
+          {content.trim()}
+        </p>
+      );
+    }
+
+    return paragraphs.map((paragraph, index) => {
+      const lines = paragraph.split('\n');
+
+      return (
+        <p key={index} className="text-sm leading-relaxed">
+          {lines.map((line, lineIndex) => (
+            <Fragment key={`${index}-${lineIndex}`}>
+              {line}
+              {lineIndex < lines.length - 1 && <br />}
+            </Fragment>
+          ))}
+        </p>
+      );
+    });
   };
 
   return (
@@ -59,7 +118,9 @@ const Chatbot: React.FC<ChatbotProps> = ({ cvData }) => {
       <div className="p-4 border-b border-gray-200">
         <h3 className="font-semibold text-gray-900 mb-1">AI Assistant</h3>
         <p className="text-sm text-gray-700 mb-1">Chat with John’s CV</p>
-        <p className="text-xs text-gray-400">Questions are checked for safety and answered using relevant CV info.</p>
+        <p className="text-xs text-gray-500">
+          Expect responses that stay positive, succinct, and welcoming while focusing on his background.
+        </p>
       </div>
       {/* Messages */}
       <div className="flex-1 overflow-y-auto p-4 space-y-4">
@@ -72,13 +133,13 @@ const Chatbot: React.FC<ChatbotProps> = ({ cvData }) => {
             className={`flex ${message.role === 'user' ? 'justify-end' : 'justify-start'}`}
           >
             <div
-              className={`max-w-[90%] rounded-lg px-3 py-2 ${
+              className={`max-w-[90%] rounded-lg px-3 py-2 space-y-3 ${
                 message.role === 'user'
                   ? 'bg-primary-blue text-white'
                   : 'bg-gray-100 text-gray-900'
               }`}
             >
-              <ReactMarkdown className="text-sm">{message.content}</ReactMarkdown>
+              {renderMessageContent(message.content)}
               <span className="text-xs opacity-70 mt-1 block">
                 {formatTimestamp(message.timestamp)}
               </span>

@@ -7,7 +7,11 @@ export async function simpleChat(prompt: string) {
   const completion = await openai.chat.completions.create({
     model: MODEL,
     messages: [
-      { role: 'system', content: 'You are a helpful assistant for CV Q&A.' },
+      {
+        role: 'system',
+        content:
+          'You are a helpful assistant for CV Q&A. Keep replies concise, friendly, and warm. Use plain text only and separate paragraphs with a single blank line when helpful.',
+      },
       { role: 'user', content: prompt }
     ],
     max_tokens: 300,
