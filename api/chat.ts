@@ -7,6 +7,26 @@ import cvData from '../cv_json_data.json';
 const openai = new OpenAI({ apiKey: process.env.VITE_OPENAI_API_KEY });
 const MODEL = 'gpt-5-nano';
 
+const extractResponseText = (response: any): string => {
+  if (!response) return '';
+  if (typeof response.output_text === 'string' && response.output_text.trim()) {
+    return response.output_text;
+  }
+  const output = response.output;
+  if (Array.isArray(output)) {
+    for (const item of output) {
+      if (Array.isArray(item.content)) {
+        for (const part of item.content) {
+          if (typeof part.text === 'string' && part.text.trim()) {
+            return part.text;
+          }
+        }
+      }
+    }
+  }
+  return '';
+};
+
 const formatResponse = (text: string) => {
   const sentences = text.split(/(?<=[.!?])\s+/);
   const paragraphs: string[] = [];
@@ -47,16 +67,26 @@ export default async function handler(req, res) {
   const prompt = `You are an expert assistant answering questions about John Britton's CV. Use only the provided context. Cite sources if possible.\n\nContext:\n${context}\n\nUser question: ${safety.sanitizedQuery}`;
 
   try {
-    const completion = await openai.chat.completions.create({
+    const completion = await openai.responses.create({
       model: MODEL,
-      messages: [
-        { role: 'system', content: 'You are a helpful assistant for CV Q&A.' },
-        { role: 'user', content: prompt }
+      input: [
+        {
+          role: 'system',
+          content: [
+            { type: 'text', text: 'You are a helpful assistant for CV Q&A.' }
+          ]
+        },
+        {
+          role: 'user',
+          content: [
+            { type: 'text', text: prompt }
+          ]
+        }
       ],
-      max_tokens: 300,
+      max_output_tokens: 300,
       temperature: 0.4
     });
-    const raw = completion.choices[0]?.message?.content || '';
+    const raw = extractResponseText(completion);
     const answer = formatResponse(raw);
     return res.status(200).json({ answer, sources });
   } catch (error) {
