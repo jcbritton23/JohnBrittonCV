@@ -437,27 +437,19 @@ The CV uses the following main sections:
 
 ## 10. Chatbot Integration & Pipeline
 
-### 10.1 Advanced Model Control Strategy (Cost-Optimized for Multi-Document RAG)
+### 10.1 GPT-5-nano Model Strategy (Unified RAG Pipeline)
 
-The chatbot uses an intelligent 4-tier system optimized for expanding document contexts:
+The chatbot now runs entirely on GPT-5-nano for every reasoning step. This keeps latency, tone, and cost predictable while still allowing a multi-stage pipeline.
 
-**Model Chain (in order):**
-- **Tier 1:** GPT-4o-mini (primary) - $0.15/M in, $0.60/M out - best cost/accuracy ratio
-- **Tier 2:** GPT-3.5-turbo (fallback) - $0.50/M in, $1.50/M out - for simple factual queries
-- **Tier 3:** GPT-4o-mini-16k (complex) - same price as Tier 1, larger context for multi-doc queries
-- **Tier 4:** GPT-4o (premium) - $5/M in, $15/M out - reserved for complex analysis only
+**Single-Model Flow:**
+- **Retrieval + Summaries:** GPT-5-nano receives retrieved snippets and, when needed, returns short summaries to trim context.
+- **Positive/Tone Rewrites:** The same GPT-5-nano prompt can rewrite queries or context for strengths/APA compliance without switching models.
+- **Final Answer:** GPT-5-nano generates the final response with citations using the refined context.
 
-**Smart Escalation Logic:**
-- **Query Classification:** Categorize by complexity (factual, analytical, comparative, creative)
-- **Context Size:** Route based on retrieved chunk count and total token length
-- **Confidence Scoring:** Escalate if response confidence < 0.8 AND high-quality chunks available
-- **Document Type Awareness:** Different models for CV vs essays vs cover letters
-- **Cost Monitoring:** Track spend per session with automatic tier-down after budget thresholds
-
-**Multi-Model Ensemble:**
-- Specialized models (strengths, weaknesses, clinical, research, academic, general) run in parallel
-- Compiler model synthesizes a concise, professional answer
-- Used for strengths/weaknesses and complex queries
+**Adaptive Prompting:**
+- Prompts include toggles (strengths, comparative, interview stage) so one model can serve multiple personas.
+- Temperature and max-token values are adjusted per stage but the model stays the same.
+- Structured outputs (citations, bullet points) are enforced through system/user prompt templates.
 
 **Layered Safety System:**
 - Forbidden topics filter (short, focused list)
@@ -480,11 +472,8 @@ The chatbot uses an intelligent 4-tier system optimized for expanding document c
 # .env (git-ignored)
 OPENAI_API_KEY=sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 
-# Advanced model chain (cost-optimized)
-PRIMARY_MODEL=gpt-4o-mini            # $0.15/M in, $0.60/M out - best value
-FALLBACK_MODEL=gpt-3.5-turbo         # $0.50/M in, $1.50/M out - factual queries
-COMPLEX_MODEL=gpt-4o-mini-16k        # same as primary, bigger context
-PREMIUM_MODEL=gpt-4o                 # $5/M in, $15/M out - complex analysis only
+# Chat model configuration
+CHAT_MODEL=gpt-5-nano                # Single model for summaries, rewrites, and final answers
 
 # Multi-document RAG settings
 EMBED_MODEL=text-embedding-3-small   # $0.02/M tokens - most cost-effective
@@ -513,10 +502,10 @@ ENABLE_DOCUMENT_AWARENESS=true       # different handling per doc type
 3. **Safety Filter (utils/safety.ts):**
    * Basic profanity/toxicity check; rephrase negative sentiment via GPT instruction.
 
-4. **Model Chain (utils/chat.ts):**
-   * Smart escalation wrapper around OpenAI API
-   * Handles model fallbacks and cost optimization
-   * Returns `{ content, modelUsed }` for debugging
+4. **Model Runner (utils/chat.ts):**
+   * GPT-5-nano wrapper around the OpenAI API
+   * Applies stage-specific prompts (summary vs final answer)
+   * Returns `{ content, modelUsed: 'gpt-5-nano' }` for debugging
 
 5. **RAG Orchestration (utils/answer.ts):**
    * Combines retrieval, safety, and model chain
@@ -541,10 +530,10 @@ End every reply with *— John Britton CV Bot*.
 
 ### 10.5 Cost Optimization Features
 
-- **Penny-pinching switches:** Disable GPT-4o-mini entirely with `FALLBACK_MODEL_2=disabled`
-- **Token limits:** Adjust `MAX_TOKENS=600` if answers never need full 768
-- **Temperature control:** Lower to 0.45 if hallucinations increase
-- **Usage tracking:** Log model usage for cost monitoring
+- **Single-model budgeting:** GPT-5-nano is the only model billed; adjust `CHAT_MODEL` in `.env` only if OpenAI updates pricing.
+- **Token limits:** Adjust `MAX_TOKENS=600` if answers never need full 768.
+- **Temperature control:** Lower to 0.45 if hallucinations increase.
+- **Usage tracking:** Log GPT-5-nano usage for cost monitoring.
 
 ### 10.6 Multi-Document Support & Expansion
 

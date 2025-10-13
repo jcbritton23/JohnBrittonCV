@@ -13,21 +13,21 @@ The current system uses a secure, server-side, multi-stage pipeline to generate 
    - Unsafe or off-topic queries are rejected before any model call.
    - (Optional: Add OpenAI Moderation API for additional safety.)
 
-2. **Retrieval-Augmented Generation (RAG) with GPT-3.5**
-   - Relevant CV context is retrieved and optionally summarized using GPT-3.5-turbo.
-   - Summarization is triggered for long context to keep downstream costs low.
+2. **Retrieval-Augmented Generation (RAG) with GPT-5-nano**
+   - Relevant CV context is retrieved and optionally summarized using GPT-5-nano.
+   - Summarization is triggered for long context to keep downstream costs low while keeping model usage consistent.
 
-3. **Optional Strengths/Positive/APA Compliance Rewriter (GPT-3.5)**
-   - If the query requests strengths, positive framing, or APA compliance, a GPT-3.5-turbo call rewrites the query or context accordingly.
-   - This stage is modular and can be extended or toggled as needed.
+3. **Optional Strengths/Positive/APA Compliance Rewriter (GPT-5-nano)**
+   - If the query requests strengths, positive framing, or APA compliance, a GPT-5-nano call rewrites the query or context accordingly.
+   - This stage is modular and can be extended or toggled as needed without switching models.
 
-4. **Final Synthesis with GPT-4o-mini**
-   - The final answer is generated using GPT-4o-mini, using the (possibly summarized and rewritten) context and query.
+4. **Final Synthesis with GPT-5-nano**
+   - The final answer is generated using GPT-5-nano, using the (possibly summarized and rewritten) context and query.
    - The answer is polished, professional, and cites sources where possible.
 
 ## Key Benefits
 
-- **Cost Control:** Only one call to GPT-4o-mini per query; all other steps use GPT-3.5-turbo.
+- **Cost Control:** Every stage reuses GPT-5-nano, enabling a single rate card and predictable spend.
 - **Security:** No API keys or model logic in the frontend; all sensitive logic is server-side.
 - **Extensibility:** Each stage is modular and can be adjusted, extended, or toggled via backend code.
 - **Safety:** Multi-layered safety checks before any user-facing answer is generated.
@@ -37,9 +37,9 @@ The current system uses a secure, server-side, multi-stage pipeline to generate 
 
 1. User submits a query: "What are John's greatest strengths as a clinician?"
 2. Backend runs rules-based safety check (rejects if unsafe).
-3. Backend retrieves relevant CV context and summarizes it with GPT-3.5 if needed.
-4. Backend detects "strengths" and rewrites the query for positive framing with GPT-3.5.
-5. Backend sends the rewritten query and summarized context to GPT-4o-mini for final answer synthesis.
+3. Backend retrieves relevant CV context and summarizes it with GPT-5-nano if needed.
+4. Backend detects "strengths" and rewrites the query for positive framing with GPT-5-nano.
+5. Backend sends the rewritten query and summarized context to GPT-5-nano for final answer synthesis.
 6. Backend returns the answer and sources to the frontend.
 
 ## How to Adjust or Extend the Pipeline
