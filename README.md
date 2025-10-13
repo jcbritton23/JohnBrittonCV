@@ -40,8 +40,8 @@ Once deployed, the site will be available at: [https://jcbritton23.github.io/Joh
 
 ## ✨ AI Chatbot Features (Updated)
 
-- **Multi-model ensemble:** Specialized models analyze queries in parallel; a compiler model synthesizes the final answer.
-- **Cost-optimized model chain:** Automatically routes queries to the most cost-effective model based on complexity and context.
+- **GPT-5-nano everywhere:** Every stage of the chatbot pipeline (summaries, rewrites, final answers) runs on GPT-5-nano for consistent tone and pricing.
+- **Lean single-model pipeline:** Retrieval, reasoning, and final answer synthesis share prompts that adapt dynamically to the query.
 - **Layered safety:** Forbidden topics filter and OpenAI Moderation API block unsafe queries before any model call.
 - **Hallucination mitigation:** All answers must cite retrieved CV context; never makes up information.
 - **Context-aware responses:** Adapts to the interviewer's context (internship, academic, clinical, general).
@@ -105,10 +105,11 @@ Once deployed, the site will be available at: [https://jcbritton23.github.io/Joh
 - **Error Handling**: Error boundaries, loading indicators, and console logging for robust debugging
 - **AI-Managed Updates**: Automated DOCX to JSON pipeline
 - **Comprehensive Documentation**: Update guides and data structure documentation
+- **Server-side GPT-5-nano Integration**: Unified model handles summaries, rewrites, and final chatbot answers
 
 ### 🔄 In Progress
 
-- **OpenAI Integration**: Chatbot currently uses mock responses
+- **Prompt Evaluation**: Continuous GPT-5-nano prompt tuning and regression testing
 - **Vector Embeddings**: Advanced retrieval system for better search
 - **Testing**: Unit and E2E tests
 - **Deployment**: GitHub Pages setup
@@ -120,7 +121,7 @@ Once deployed, the site will be available at: [https://jcbritton23.github.io/Joh
    - Configure deployment settings
 
 2. **Advanced Features**
-   - Real OpenAI API integration
+   - Automated eval harness for GPT-5-nano responses
    - Vector embeddings for better search
    - Advanced safety filters
    - Analytics integration
@@ -148,7 +149,7 @@ Once deployed, the site will be available at: [https://jcbritton23.github.io/Joh
 - **Language**: TypeScript
 - **Styling**: Tailwind CSS
 - **Icons**: Lucide React
-- **AI**: OpenAI API (planned)
+- **AI**: OpenAI GPT-5-nano (server-side)
 - **Hosting**: GitHub Pages (planned)
 
 ## 📊 Data Schema
