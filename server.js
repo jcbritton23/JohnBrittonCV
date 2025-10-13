@@ -22,7 +22,7 @@ try {
 }
 
 const openai = new OpenAI({ apiKey: process.env.VITE_OPENAI_API_KEY });
-const MODEL = 'gpt-4o-mini';
+const MODEL = 'gpt-5-nano';
 
 // --- Response formatter to keep paragraphs short ---
 const formatResponse = (text) => {
