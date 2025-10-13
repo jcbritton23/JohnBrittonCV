@@ -242,6 +242,7 @@ export interface CVData {
     address: string;
     phone: string;
     email: string;
+    interactiveCV?: string;
   };
   education: {
     degree: string;
@@ -260,7 +261,12 @@ export interface CVData {
     responsibilities: string[];
   }[];
   evidenceBasedProtocols?: {
-    [category: string]: string[];
+    description?: string;
+    cognitiveAndBehavioral?: string[];
+    parentingAndChild?: string[];
+    traumaFocused?: string[];
+    thirdWave?: string[];
+    [category: string]: string[] | string | undefined;
   };
   supervisoryExperience?: {
     position: string;
@@ -307,17 +313,21 @@ export interface CVData {
     venue: string;
     type: string;
     authors: string[];
+    category?: string;
   }[];
   administrativeRoles?: {
     position: string;
     organization: string;
     dates: string;
+    location?: string;
+    responsibilities?: string[];
   }[];
   technologyTools?: {
     name: string;
     date: string;
     description: string;
-    link: string;
+    details?: string;
+    link?: string;
   }[];
   professionalMemberships?: {
     organization: string;

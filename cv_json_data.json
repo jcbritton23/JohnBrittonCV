@@ -3,7 +3,8 @@
     "name": "John Britton",
     "address": "1952 Cobblestone Way S, Terre Haute, IN 47802",
     "phone": "(615) 485-2333",
-    "email": "jbritton10@sycamores.indstate.edu"
+    "email": "jbritton10@sycamores.indstate.edu",
+    "interactiveCV": "https://jcbritton23.github.io/JohnBrittonCV/"
   },
   "education": [
     {
@@ -40,10 +41,10 @@
       "dates": "June 2025 - Present",
       "supervisor": "Thomas Rea, Psy.D., HSPP",
       "responsibilities": [
-        "Provided individual psychotherapy services to child, adolescent, and adult clients in a private practice setting",
-        "Completed comprehensive integrative psychological evaluations using cognitive ability, academic achievement, and objective personality measures",
-        "Communicated results of evaluations and treatment recommendations to clients, parents, caregivers, referring physicians, and school personnel",
-        "Engaged in weekly individual supervision to reflect on clinical work, receive feedback, and integrate evidence-based practices"
+        "Provide individual psychotherapy services to child, adolescent, and adult clients in a private practice setting",
+        "Complete comprehensive integrative psychological evaluations using cognitive ability, academic achievement, and objective personality measures",
+        "Communicate results of evaluations and treatment recommendations to clients, parents, caregivers, referring physicians, and school personnel",
+        "Engage in weekly individual supervision to reflect on clinical work, receive feedback, and integrate evidence-based practices"
       ]
     },
     {
@@ -64,7 +65,11 @@
       "organization": "ISU Psychology Clinic",
       "location": "Terre Haute, IN",
       "dates": "Aug 2023 - Aug 2025",
-      "supervisors": ["Elizabeth Smith, Psy.D., HSPP", "Liz O'Laughlin, Ph.D., HSPP", "Kathy O'Campo, Ph.D., HSPP"],
+      "supervisors": [
+        "Elizabeth Smith, Psy.D., HSPP",
+        "Liz O'Laughlin, Ph.D., HSPP",
+        "Kathy O'Campo, Ph.D., HSPP"
+      ],
       "responsibilities": [
         "Provided individual psychotherapy and psychological assessment services to child, adolescent, and adult clients in a university-based outpatient clinic",
         "Prepared integrative psychological reports, created treatment plans, and maintained progress notes utilizing an electronic medical record system",
@@ -87,14 +92,17 @@
     }
   ],
   "evidenceBasedProtocols": {
+    "description": "Provided structured interventions and flexible integration of supportive, client-centered approaches based on individual needs.",
     "cognitiveAndBehavioral": [
       "Cognitive Behavioral Therapy (CBT)",
       "Behavioral Activation",
       "Exposure Therapy",
       "Unified Protocol for Transdiagnostic Treatment of Emotional Disorders",
-      "CBT for Insomnia (CBT-I)",
+      "CBT for Insomnia",
       "CBT for Chronic Pain",
       "CBT for Weight Management",
+      "Enhanced CBT (for eating disorders)",
+      "CBT for ARFID",
       "CBT for Couples Therapy",
       "SAMHSA Anger Management Treatment"
     ],
@@ -122,10 +130,10 @@
       "dates": "Aug 2025 - Present",
       "supervisor": "Kathy O'Campo, Ph.D., HSPP",
       "responsibilities": [
-        "Provided weekly peer supervision to second-year doctoral students in their first year of clinical practicum",
-        "Reviewed session recordings, progress notes, and clinical writing to support development in intervention, documentation, and ethical decision-making",
-        "Facilitated reflective case discussions and offered formative feedback on clinical skills and professional identity",
-        "Participated in biweekly group supervision with other peer supervisors to strengthen supervisory practices and align with program expectations"
+        "Provide weekly peer supervision to second-year doctoral students in their first year of clinical practicum",
+        "Review session recordings, progress notes, and clinical writing to support development in intervention, documentation, and ethical decision-making",
+        "Facilitate reflective case discussions and offer formative feedback on clinical skills and professional identity",
+        "Participate in biweekly group supervision with other peer supervisors to strengthen supervisory practices and align with program expectations"
       ]
     },
     {
@@ -182,9 +190,9 @@
       "status": "Proposal Defended Aug 2025; IRB Approval Feb 2025",
       "description": [
         "Designed a quantitative study testing associations between childhood temperament, anxiety symptoms, and music performance anxiety in college musicians",
-        "Secured IRB approval and began participant recruitment and data collection in Spring 2025",
-        "Conducting statistical analyses in SPSS and R, including descriptive statistics, multiple regression, ANOVA, and mediation models",
-        "Selected validated self-report measures, integrated literature to support theoretical model, and drafted APA-style manuscript sections"
+        "Secured IRB approval and began participant recruitment and data collection in Spring 2025 after obtaining dissertation committee approval",
+        "Anticipate completing data analysis in spring of 2026",
+        "Anticipate defending final dissertation in summer of 2026"
       ]
     },
     {
@@ -218,48 +226,14 @@
       "institution": "University of Miami",
       "location": "Miami, FL",
       "dates": "Aug 2014 - May 2016",
-      "supervisors": ["Shannon de l'Etoile, Ph.D.", "Teresa Lesiuk, Ph.D."],
+      "supervisors": [
+        "Shannon de l'Etoile, Ph.D.",
+        "Teresa Lesiuk, Ph.D."
+      ],
       "description": [
         "Assisted in participant recruitment and scoring of the Myers-Briggs Type Indicator",
         "Conducted behavioral coding and analysis of infant and toddler movement responses to music from video-recorded sessions",
         "Performed data entry and supported organization of audiovisual materials for lab-based developmental music research"
-      ]
-    }
-  ],
-  "teachingExperience": [
-    {
-      "position": "Summer Faculty",
-      "institution": "ISU Department of Psychology",
-      "location": "Terre Haute, IN",
-      "dates": "May 2025 - July 2025",
-      "course": "PSY 321: Diversity and Ethics in Psychology",
-      "description": [
-        "Designed and taught an online undergraduate course integrating diversity, professional ethics, and cultural competence in psychology",
-        "Developed all instructional materials, including lectures, assignments, assessments, and grading rubrics",
-        "Facilitated student engagement through interactive discussion boards, applied assignments, and weekly video modules"
-      ]
-    },
-    {
-      "position": "Summer Faculty",
-      "institution": "ISU Department of Psychology",
-      "location": "Terre Haute, IN",
-      "dates": "June 2024 - Aug 2024",
-      "course": "PSY 101: General Psychology",
-      "description": [
-        "Independently taught one online section of introductory psychology to undergraduate students",
-        "Delivered weekly lectures, created assignments and assessments, and maintained student engagement in a virtual format"
-      ]
-    },
-    {
-      "position": "Graduate Teaching Assistant",
-      "institution": "ISU Department of Psychology",
-      "location": "Terre Haute, IN",
-      "dates": "Aug 2023 - May 2024",
-      "course": "PSY 101: General Psychology",
-      "supervisor": "Brad Brubaker, Ph.D.",
-      "description": [
-        "Assisted with two in-person sections each semester (~35 students per section) of undergraduate introductory psychology",
-        "Supported student learning through grading, classroom management, and individual assistance"
       ]
     }
   ],
@@ -297,158 +271,39 @@
       "award": "Howard Hanson Four-Year Merit Scholarship, Eastman School of Music"
     }
   ],
-  "presentations": [
-    {
-      "date": "2025, September",
-      "title": "Ethical and Effective Use of AI in Clinical Care: Applications and Limits",
-      "type": "Academic presentation",
-      "venue": "Clients & Science Seminar Series, Indiana State University, Terre Haute, IN",
-      "authors": ["Britton, J."]
-    },
-    {
-      "date": "2025, September",
-      "title": "Generative AI quick start for clinicians",
-      "type": "Professional presentation",
-      "venue": "Murphy, Urban, & Associates, Terre Haute, IN",
-      "authors": ["Britton, J."]
-    },
-    {
-      "date": "2025, August",
-      "title": "AI Hackathon: Exploring Clinical Use Cases Across the Psy.D. Program",
-      "type": "Academic presentation",
-      "venue": "Indiana State University Department of Psychology, Terre Haute, IN",
-      "authors": ["Britton, J."]
-    },
-    {
-      "date": "2025, August",
-      "title": "AI in Graduate Training: Risks, Tools, and Opportunities",
-      "type": "Panel presentation",
-      "venue": "Graduate Assistant Orientation, Indiana State University, Terre Haute, IN",
-      "authors": ["Britton, J."]
-    },
-    {
-      "date": "2025, January",
-      "title": "Finding strength and balance: Addressing burnout in Healthcare",
-      "type": "Professional presentation",
-      "venue": "Clay City Center for Family Medicine, Clay City, IN",
-      "authors": ["Britton, J."]
-    },
-    {
-      "date": "2023, April",
-      "title": "Upward and downward social comparison when listening to sad music",
-      "type": "Poster presentation",
-      "venue": "Midwestern Psychological Association Conference, Chicago, IL",
-      "authors": ["Britton, J."]
-    },
-    {
-      "date": "2023, April",
-      "title": "Potential links between sad music listening, rumination, and depression",
-      "type": "Poster presentation",
-      "venue": "Midwestern Psychological Association Conference, Chicago, IL",
-      "authors": ["Gelfand, A.", "Johnson, T.", "Todd, B.", "Bedore, P.", "Britton, J."]
-    },
-    {
-      "date": "2018, April",
-      "title": "Working with the suicidal client",
-      "type": "Conference presentation",
-      "venue": "Star Center Music Therapy Conference, Jackson, TN",
-      "authors": ["Britton, J."]
-    },
-    {
-      "date": "2017, May",
-      "title": "\"Big T\" and \"little t\" trauma",
-      "type": "Professional presentation",
-      "venue": "Lipscomb University Wellness 66 Seminar, Nashville, TN",
-      "authors": ["Killingsworth, A.", "Britton, J."]
-    },
-    {
-      "date": "2016, May",
-      "title": "Music and mindfulness",
-      "type": "Professional presentation",
-      "venue": "Lipscomb University Wellness 66 Seminar, Nashville, TN",
-      "authors": ["Britton, J."]
-    },
-    {
-      "date": "2016, March",
-      "title": "An introduction to mindfulness using music listening and instrument playing",
-      "type": "Conference presentation",
-      "venue": "SER American Music Therapy Conference, Macon, GA",
-      "authors": ["Britton, J."]
-    },
-    {
-      "date": "2015, March",
-      "title": "The effect of instrumental improvisation on selective attention in typical adults",
-      "type": "Poster presentation",
-      "venue": "SER American Music Therapy Conference, Columbia, SC",
-      "authors": ["Britton, J."]
-    },
-    {
-      "date": "2015, October",
-      "title": "Music and mindfulness",
-      "type": "Professional presentation",
-      "venue": "University of Miami medical campus staff and multiple sclerosis support group, Miami, FL",
-      "authors": ["Britton, J."]
-    }
-  ],
-  "administrativeRoles": [
-    {
-      "position": "Quality Improvement Associate",
-      "organization": "Board of Child Care, Caminos Program",
-      "location": "Baltimore, MD",
-      "dates": "June 2021 - May 2022",
-      "responsibilities": [
-        "Supported reunification of unaccompanied migrant youth with sponsors in accordance with federal guidelines",
-        "Monitored compliance with sexual abuse prevention protocols and responded to safety concerns by reviewing incident reports and video documentation",
-        "Collaborated with interpreters to support Spanish- and Arabic-speaking youth during sensitive reporting and documentation processes",
-        "Developed internal policies, COVID-19 procedures, and licensing reports in alignment with federal, state, and agency standards"
-      ]
-    },
-    {
-      "position": "Summer Tutor",
-      "organization": "London Achievement Processes",
-      "location": "Miami, FL",
-      "dates": "June 2014 - Aug 2015",
-      "responsibilities": [
-        "Provided one-on-one tutoring in reading and comprehension for children ages 5–12 with learning disabilities, behavioral challenges, and autism spectrum disorder",
-        "Trained in Lindamood-Bell's Seeing Stars® program for symbol imagery and phonological awareness"
-      ]
-    }
-  ],
   "technologyTools": [
+    {
+      "name": "LocalScribe",
+      "date": "Sep 2025",
+      "description": "Privacy-first, local AI application (in development) designed to support psychologists in drafting notes and reports",
+      "details": "Built on open-source models adapted for clinical documentation to ensure relevance and PHI protection",
+      "link": "Website"
+    },
     {
       "name": "Interactive CV",
       "date": "Oct 2025",
       "description": "Launched a web-based, chat-enabled version of this CV to demonstrate transparent AI integration in professional identity and clinical training",
-      "link": "Interactive CV"
-    },
-    {
-      "name": "Treatment Plan Scribe",
-      "date": "Sep 2025",
-      "description": "Custom GPT co-designed with ISU faculty to support students in generating ethical, goal-oriented treatment plans for clinical use",
-      "link": "https://chatgpt.com/g/g-6761f736fd008191b18dee6dcb58bdc2-treatment-plan-scribe"
+      "link": "https://jcbritton23.github.io/JohnBrittonCV/"
     },
     {
       "name": "PSY 321 Course Chat",
       "date": "May 2025",
       "description": "Custom GPT created to improve accessibility and self-guided navigation of course materials in an online undergraduate Diversity and Ethics course taught independently",
+      "details": "Enabled students to interact with syllabus content, assignment policies, and expectations on demand",
       "link": "https://chatgpt.com/g/g-681b9e9c5ec08191a4a670a1fc80d9c7-psy-321-course-chat"
-    },
-    {
-      "name": "Unconscious Bias Identifier",
-      "date": "Jan 2025",
-      "description": "Custom GPT adapted from Buster Benson's \"Cognitive Bias Cheat Sheet\" to promote awareness of unconscious cognitive distortions",
-      "link": "https://chatgpt.com/g/g-678bccc6a69081919ea7fdfba8d8da16-unconscious-bias-identifier"
     },
     {
       "name": "APA Ethics Dilemma Decision Making and Discussion",
       "date": "Aug 2024",
       "description": "Custom GPT designed to help users select an ethical framework and work through clinical dilemmas",
+      "details": "Supported reflective decision-making and discussion aligned with the APA Ethics Code",
       "link": "https://chatgpt.com/g/g-l3HZnoKZC-apa-ethics-dilemma-decision-making-and-discussion"
     },
     {
       "name": "Client Psych Handout Generator",
       "date": "Jul 2024",
-      "description": "Custom GPT designed to guide creation of personalized, interactive, evidence-based handouts for clients using structured prompts and collaborative Canvas documents",
+      "description": "Custom GPT designed to guide creation of personalized, interactive, evidence-based handouts for clients using structured prompts",
+      "details": "Integrated CBT, ACT, DBT, and trauma-informed content frameworks tailored by audience, tone, and purpose",
       "link": "https://chatgpt.com/g/g-6761f10b5d6c8191a24c650b27a83c5e-client-psychhandout"
     }
   ],
@@ -479,10 +334,24 @@
   ],
   "trainingAndEducation": [
     {
+      "title": "Opportunity, Challenge, and Shaping the Future of AI",
+      "type": "APA webinar, online",
+      "date": "Jul 2025",
+      "presenters": [
+        "Eduardo Bunge, Ph.D.",
+        "Jenna Carl, Ph.D.",
+        "Grin Lord, Psy.D., ABPP",
+        "Mindy Shoss, Ph.D."
+      ]
+    },
+    {
       "title": "Spiritual Competency Training in Mental Health",
       "type": "online course, modules 1-3",
       "date": "Apr 2025",
-      "presenters": ["Kenneth I. Pargament, Ph.D.", "Michael J. Pearce, Ph.D."]
+      "presenters": [
+        "Kenneth I. Pargament, Ph.D.",
+        "Michael J. Pearce, Ph.D."
+      ]
     },
     {
       "title": "Neurodiversity-Affirming Care",
@@ -508,7 +377,10 @@
     {
       "title": "Using ADDRESSING Model for Case Conceptualization",
       "date": "Oct 2023",
-      "presenters": ["Kathy O'Campo, Ph.D.", "Paige Bedore, M.S."]
+      "presenters": [
+        "Kathy O'Campo, Ph.D.",
+        "Paige Bedore, M.S."
+      ]
     },
     {
       "title": "Fundamentals of the Assessment, Conceptualization, and Treatment of OCD",
@@ -526,7 +398,7 @@
       "presenter": "Kevin Bolinskey, Ph.D., HSPP"
     },
     {
-      "title": "Acceptance & Commitment Therapy - ACT for adolescents",
+      "title": "Acceptance & Commitment Therapy - ACT for Adolescents",
       "type": "online course",
       "date": "Dec 2017",
       "presenter": "Russ Harris, M.B.B.S."
@@ -539,9 +411,9 @@
       "location": "Terre Haute, IN",
       "dates": "Aug 2022 - Present",
       "activities": [
-        "Provided weekly music performance and coordination for community meetings and local gatherings",
-        "Played organ and arranged musical contributions for youth-focused events and group services",
-        "Engaged in community outreach events focused on inclusion and service, such as Hamilton Center's Diversity Walk and Manna from Seven food distribution"
+        "Provide weekly music performance and coordination for community meetings and local gatherings",
+        "Play organ and arrange musical contributions for youth-focused events and group services",
+        "Engage in community outreach events focused on inclusion and service, such as Hamilton Center's Diversity Walk and Manna from Seven food distribution"
       ]
     },
     {
@@ -567,6 +439,14 @@
   ],
   "references": [
     {
+      "name": "Elizabeth (Liz) O'Laughlin, Ph.D., HSPP",
+      "title": "Professor and Director of Training, Clinical Supervisor",
+      "organization": "Indiana State University, Department of Psychology",
+      "location": "Terre Haute, IN",
+      "phone": "(812) 237-2455",
+      "email": "Liz.O'laughlin@indstate.edu"
+    },
+    {
       "name": "Elizabeth (Liz) Smith, Psy.D., HSPP",
       "title": "Assistant Professor, Clinical Supervisor",
       "organization": "Indiana State University, Department of Psychology",
@@ -575,12 +455,200 @@
       "email": "Liz.Smith@indstate.edu"
     },
     {
-      "name": "Thomas Johnson, Ph.D., HSPP",
-      "title": "Professor",
-      "organization": "Indiana State University, Department of Psychology",
+      "name": "Michael Urban, Psy.D., HSPP",
+      "title": "Clinical Supervisor",
+      "organization": "Murphy Urban & Associates",
       "location": "Terre Haute, IN",
-      "phone": "(812) 237-2449",
-      "email": "Thomas.Johnson@indstate.edu"
+      "phone": "(812) 235-6121",
+      "email": "murban@murphyurbanassociates.com"
+    }
+  ],
+  "teachingExperience": [
+    {
+      "position": "Adjunct Instructor",
+      "institution": "ISU Department of Psychology",
+      "location": "Terre Haute, IN",
+      "dates": "May 2025 - July 2025",
+      "course": "PSY 321: Diversity and Ethics in Psychology",
+      "description": [
+        "Developed all instructional materials, including lectures, assignments, assessments, and grading rubrics",
+        "Facilitated student engagement through interactive discussion boards, applied assignments, and weekly video modules",
+        "Graded and provided feedback on assignments and managed an online gradebook via Canvas"
+      ]
+    },
+    {
+      "position": "Adjunct Instructor",
+      "institution": "ISU Department of Psychology",
+      "location": "Terre Haute, IN",
+      "dates": "June 2024 - Aug 2024",
+      "course": "PSY 101: General Psychology",
+      "description": [
+        "Independently taught one online section of introductory psychology to undergraduate students",
+        "Delivered weekly lectures, created assignments and assessments, and maintained student engagement in a virtual format"
+      ]
+    },
+    {
+      "position": "Graduate Teaching Assistant",
+      "institution": "ISU Department of Psychology",
+      "location": "Terre Haute, IN",
+      "dates": "Aug 2023 - May 2024",
+      "course": "PSY 101: General Psychology",
+      "supervisor": "Brad Brubaker, Ph.D.",
+      "description": [
+        "Taught two in-person sections each semester (~35 students per section) of undergraduate introductory psychology",
+        "Supported student learning through grading, classroom management, and individual assistance"
+      ]
+    }
+  ],
+  "administrativeRoles": [
+    {
+      "position": "Quality Improvement Associate",
+      "organization": "Board of Child Care, Caminos Program",
+      "dates": "June 2021 - May 2022",
+      "responsibilities": [
+        "Supported reunification of unaccompanied migrant youth with sponsors in accordance with federal guidelines",
+        "Monitored compliance with sexual abuse prevention protocols and responded to safety concerns by reviewing incident reports and video documentation",
+        "Collaborated with interpreters to support Spanish- and Arabic-speaking youth during sensitive reporting and documentation processes",
+        "Developed internal policies, COVID-19 procedures, and licensing reports in alignment with federal, state, and agency standards"
+      ],
+      "location": "Baltimore, MD"
+    }
+  ],
+  "presentations": [
+    {
+      "title": "Upward and downward social comparison when listening to sad music",
+      "date": "2023, April",
+      "venue": "Midwestern Psychological Association Conference, Chicago, IL",
+      "type": "Poster presentation",
+      "authors": [
+        "Britton, J."
+      ],
+      "category": "research"
+    },
+    {
+      "title": "Potential links between sad music listening, rumination, and depression",
+      "date": "2023, April",
+      "venue": "Midwestern Psychological Association Conference, Chicago, IL",
+      "type": "Poster presentation",
+      "authors": [
+        "Gelfand, A.",
+        "Johnson, T.",
+        "Todd, B.",
+        "Bedore, P.",
+        "Britton, J."
+      ],
+      "category": "research"
+    },
+    {
+      "title": "An introduction to mindfulness using music listening and instrument playing",
+      "date": "2016, March",
+      "venue": "SER American Music Therapy Conference, Macon, GA",
+      "type": "Conference presentation",
+      "authors": [
+        "Britton, J."
+      ],
+      "category": "research"
+    },
+    {
+      "title": "The effect of instrumental improvisation on selective attention in typical adults",
+      "date": "2015, March",
+      "venue": "SER American Music Therapy Conference, Columbia, SC",
+      "type": "Poster presentation",
+      "authors": [
+        "Britton, J."
+      ],
+      "category": "research"
+    },
+    {
+      "title": "Use of AI: Practical and ethical considerations",
+      "date": "2025, September",
+      "venue": "Clients & Science Seminar Series, Indiana State University, Terre Haute, IN",
+      "type": "Academic presentation",
+      "authors": [
+        "Britton, J."
+      ],
+      "category": "professional"
+    },
+    {
+      "title": "Generative AI quick start for clinicians",
+      "date": "2025, September",
+      "venue": "Murphy, Urban, & Associates, Terre Haute, IN",
+      "type": "Professional presentation",
+      "authors": [
+        "Britton, J."
+      ],
+      "category": "professional"
+    },
+    {
+      "title": "AI Hackathon: Exploring Clinical Use Cases Across the Psy.D. Program",
+      "date": "2025, August",
+      "venue": "Indiana State University Department of Psychology, Terre Haute, IN",
+      "type": "Academic presentation",
+      "authors": [
+        "Britton, J."
+      ],
+      "category": "professional"
+    },
+    {
+      "title": "AI in Graduate Training: Risks, Tools, and Opportunities",
+      "date": "2025, August",
+      "venue": "Graduate Assistant Orientation, Indiana State University, Terre Haute, IN",
+      "type": "Panel presentation",
+      "authors": [
+        "Britton, J."
+      ],
+      "category": "professional"
+    },
+    {
+      "title": "Finding strength and balance: Addressing burnout in Healthcare",
+      "date": "2025, January",
+      "venue": "Clay City Center for Family Medicine, Clay City, IN",
+      "type": "Professional presentation",
+      "authors": [
+        "Britton, J."
+      ],
+      "category": "professional"
+    },
+    {
+      "title": "Working with the suicidal client",
+      "date": "2018, April",
+      "venue": "Star Center Music Therapy Conference, Jackson, TN",
+      "type": "Conference presentation",
+      "authors": [
+        "Britton, J."
+      ],
+      "category": "professional"
+    },
+    {
+      "title": "\"Big T\" and \"little t\" trauma",
+      "date": "2017, May",
+      "venue": "Lipscomb University Wellness 66 Seminar, Nashville, TN",
+      "type": "Professional presentation",
+      "authors": [
+        "Killingsworth, A.",
+        "Britton, J."
+      ],
+      "category": "professional"
+    },
+    {
+      "title": "Music and mindfulness",
+      "date": "2016, May",
+      "venue": "Lipscomb University Wellness 66 Seminar, Nashville, TN",
+      "type": "Professional presentation",
+      "authors": [
+        "Britton, J."
+      ],
+      "category": "professional"
+    },
+    {
+      "title": "Music and mindfulness",
+      "date": "2015, October",
+      "venue": "University of Miami medical campus staff and multiple sclerosis support group, Miami, FL",
+      "type": "Professional presentation",
+      "authors": [
+        "Britton, J."
+      ],
+      "category": "professional"
     }
   ]
 }

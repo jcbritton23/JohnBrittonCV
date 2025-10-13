@@ -20,21 +20,27 @@
     },
     {
       "type": "paragraph",
-      "text": "Cell: (615) 485-2333 ",
-      "raw_text": "Cell: (615) 485-2333 ",
+      "text": "Cell: (615) 485-2333",
+      "raw_text": "Cell: (615) 485-2333",
       "alignment": "CENTER (1)"
     },
     {
       "type": "paragraph",
-      "text": "Email: ",
+      "text": "Email: jbritton10@sycamores.indstate.edu",
       "raw_text": "Email: jbritton10@sycamores.indstate.edu",
+      "alignment": "CENTER (1)"
+    },
+    {
+      "type": "paragraph",
+      "text": "Interactive CV: https://jcbritton23.github.io/JohnBrittonCV/",
+      "raw_text": "Interactive CV: https://jcbritton23.github.io/JohnBrittonCV/",
       "alignment": "CENTER (1)"
     },
     {
       "type": "paragraph",
       "text": "",
       "raw_text": "",
-      "alignment": "CENTER (1)"
+      "alignment": "None"
     },
     {
       "type": "paragraph",
@@ -50,14 +56,14 @@
     },
     {
       "type": "paragraph",
-      "text": "May 2027 \t<strong>Doctor of Clinical Psychology (</strong><strong>Psy.D.) </strong>\t",
-      "raw_text": "May 2027 \tDoctor of Clinical Psychology (Psy.D.) \t",
-      "alignment": "LEFT (0)"
+      "text": "May 2027 (Expected)\t<strong>Doctor of Clinical Psychology (Psy.D.)</strong>\t",
+      "raw_text": "May 2027 (Expected)\tDoctor of Clinical Psychology (Psy.D.)\t",
+      "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "(Expected)\tIndiana State University (ISU), Terre Haute, IN",
-      "raw_text": "(Expected)\tIndiana State University (ISU), Terre Haute, IN",
+      "text": "Indiana State University (ISU), Terre Haute, IN",
+      "raw_text": "Indiana State University (ISU), Terre Haute, IN",
       "alignment": "None"
     },
     {
@@ -74,15 +80,15 @@
     },
     {
       "type": "paragraph",
-      "text": "May 2024\t<strong>Master of Science in Psychology (</strong><strong>M.S.)</strong><strong>      </strong>\t<strong>          </strong> \t\t",
-      "raw_text": "May 2024\tMaster of Science in Psychology (M.S.)      \t           \t\t",
+      "text": "May 2024\t<strong>Master of Science in Psychology (M.S.)</strong>\t",
+      "raw_text": "May 2024\tMaster of Science in Psychology (M.S.)\t",
       "alignment": "None"
     },
     {
       "type": "paragraph",
       "text": "ISU, Terre Haute, IN",
       "raw_text": "ISU, Terre Haute, IN",
-      "alignment": "LEFT (0)"
+      "alignment": "None"
     },
     {
       "type": "paragraph",
@@ -92,8 +98,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Dec 2016\t<strong>Master of Music in Music Therapy</strong>\t<strong>(</strong><strong>M.M.</strong><strong>)</strong>     ",
-      "raw_text": "Dec 2016\tMaster of Music in Music Therapy\t(M.M.)     ",
+      "text": "Dec 2016\t<strong>Master of Music in Music Therapy (M.M.)</strong>\t",
+      "raw_text": "Dec 2016\tMaster of Music in Music Therapy (M.M.)\t",
       "alignment": "None"
     },
     {
@@ -110,8 +116,8 @@
     },
     {
       "type": "paragraph",
-      "text": "May 2010\t<strong>Bachelor of Music in Jazz Studies (</strong><strong>B.M.)</strong>    ",
-      "raw_text": "May 2010\tBachelor of Music in Jazz Studies (B.M.)    ",
+      "text": "May 2010\t<strong>Bachelor of Music in Jazz Studies (B.M.)</strong>\t",
+      "raw_text": "May 2010\tBachelor of Music in Jazz Studies (B.M.)\t",
       "alignment": "None"
     },
     {
@@ -140,14 +146,14 @@
     },
     {
       "type": "paragraph",
-      "text": "June 2025- \t<strong>Murphy, Urban, & Associates</strong><strong> </strong>",
-      "raw_text": "June 2025- \tMurphy, Urban, & Associates ",
+      "text": "June 2025 -\t<strong>Murphy, Urban, & Associates</strong>",
+      "raw_text": "June 2025 -\tMurphy, Urban, & Associates",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Present\t\tTitle: Graduate Student Clinician\t\t         ",
-      "raw_text": "Present\t\tTitle: Graduate Student Clinician\t\t         ",
+      "text": "Present\tTitle: Graduate Student Clinician",
+      "raw_text": "Present\tTitle: Graduate Student Clinician",
       "alignment": "None"
     },
     {
@@ -164,26 +170,26 @@
     },
     {
       "type": "paragraph",
-      "text": "Provided individual psychotherapy services to child, adolescent, and adult clients in a private practice setting",
-      "raw_text": "Provided individual psychotherapy services to child, adolescent, and adult clients in a private practice setting",
+      "text": "Provide individual psychotherapy services to child, adolescent, and adult clients in a private practice setting",
+      "raw_text": "Provide individual psychotherapy services to child, adolescent, and adult clients in a private practice setting",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Completed comprehensive integrative psychological evaluations using cognitive ability, academic achievement, and objective personality measures",
-      "raw_text": "Completed comprehensive integrative psychological evaluations using cognitive ability, academic achievement, and objective personality measures",
+      "text": "Complete comprehensive integrative psychological evaluations using cognitive ability, academic achievement, and objective personality measures",
+      "raw_text": "Complete comprehensive integrative psychological evaluations using cognitive ability, academic achievement, and objective personality measures",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Communicated results of evaluations and treatment recommendations to clients, parents, caregivers, referring physicians, and school personnel",
-      "raw_text": "Communicated results of evaluations and treatment recommendations to clients, parents, caregivers, referring physicians, and school personnel",
+      "text": "Communicate results of evaluations and treatment recommendations to clients, parents, caregivers, referring physicians, and school personnel",
+      "raw_text": "Communicate results of evaluations and treatment recommendations to clients, parents, caregivers, referring physicians, and school personnel",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Engaged in weekly individual supervision to reflect on clinical work, receive feedback, and integrate evidence-based practices",
-      "raw_text": "Engaged in weekly individual supervision to reflect on clinical work, receive feedback, and integrate evidence-based practices",
+      "text": "Engage in weekly individual supervision to reflect on clinical work, receive feedback, and integrate evidence-based practices",
+      "raw_text": "Engage in weekly individual supervision to reflect on clinical work, receive feedback, and integrate evidence-based practices",
       "alignment": "None"
     },
     {
@@ -194,20 +200,20 @@
     },
     {
       "type": "paragraph",
-      "text": "June 2024-\t<strong>Clay City Center for Family Medicine</strong>\t\t<strong>       </strong><strong>      </strong>\t\t",
-      "raw_text": "June 2024-\tClay City Center for Family Medicine\t\t             \t\t",
+      "text": "June 2024 -\t<strong>Clay City Center for Family Medicine</strong>",
+      "raw_text": "June 2024 -\tClay City Center for Family Medicine",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "May 2025\tTitle: Doctoral Psychology Student Clinician\t",
-      "raw_text": "May 2025\tTitle: Doctoral Psychology Student Clinician\t",
+      "text": "May 2025\tTitle: Doctoral Psychology Student Clinician",
+      "raw_text": "May 2025\tTitle: Doctoral Psychology Student Clinician",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Location: Clay City, IN\t\t",
-      "raw_text": "Location: Clay City, IN\t\t",
+      "text": "Location: Clay City, IN",
+      "raw_text": "Location: Clay City, IN",
       "alignment": "None"
     },
     {
@@ -224,8 +230,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Completed comprehensive integrative psychological evaluations ",
-      "raw_text": "Completed comprehensive integrative psychological evaluations ",
+      "text": "Completed comprehensive integrative psychological evaluations",
+      "raw_text": "Completed comprehensive integrative psychological evaluations",
       "alignment": "None"
     },
     {
@@ -248,8 +254,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Aug 2023-<strong> </strong>\t<strong>ISU Psychology Clinic</strong><strong> </strong>\t\t\t\t\t<strong>         </strong>",
-      "raw_text": "Aug 2023- \tISU Psychology Clinic \t\t\t\t\t         ",
+      "text": "Aug 2023 -\t<strong>ISU Psychology Clinic</strong>",
+      "raw_text": "Aug 2023 -\tISU Psychology Clinic",
       "alignment": "None"
     },
     {
@@ -266,14 +272,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Supervisors: Elizabeth Smith, Psy.D., HSPP, Liz O’Laughlin, Ph.D., HSPP, ",
-      "raw_text": "Supervisors: Elizabeth Smith, Psy.D., HSPP, Liz O’Laughlin, Ph.D., HSPP, ",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Kathy O’Campo, Ph.D., HSPP",
-      "raw_text": "Kathy O’Campo, Ph.D., HSPP",
+      "text": "Supervisors: Elizabeth Smith, Psy.D., HSPP, Liz O'Laughlin, Ph.D., HSPP, Kathy O'Campo, Ph.D., HSPP",
+      "raw_text": "Supervisors: Elizabeth Smith, Psy.D., HSPP, Liz O'Laughlin, Ph.D., HSPP, Kathy O'Campo, Ph.D., HSPP",
       "alignment": "None"
     },
     {
@@ -302,8 +302,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Aug 2023-<strong> </strong>\t<strong>ISU ADHD Evaluation Clinic</strong>\t\t\t\t<strong>       </strong>\t<strong>          </strong>",
-      "raw_text": "Aug 2023- \tISU ADHD Evaluation Clinic\t\t\t\t       \t          ",
+      "text": "Aug 2023 -\t<strong>ISU ADHD Evaluation Clinic</strong>",
+      "raw_text": "Aug 2023 -\tISU ADHD Evaluation Clinic",
       "alignment": "None"
     },
     {
@@ -320,8 +320,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Supervisor: Liz O’Laughlin, Ph.D., HSPP",
-      "raw_text": "Supervisor: Liz O’Laughlin, Ph.D., HSPP",
+      "text": "Supervisor: Liz O'Laughlin, Ph.D., HSPP",
+      "raw_text": "Supervisor: Liz O'Laughlin, Ph.D., HSPP",
       "alignment": "None"
     },
     {
@@ -368,14 +368,14 @@
     },
     {
       "type": "paragraph",
-      "text": "Provided structured interventions and flexible integration of supportive, client-centered approaches based on individual needs. ",
-      "raw_text": "Provided structured interventions and flexible integration of supportive, client-centered approaches based on individual needs. ",
+      "text": "Provided structured interventions and flexible integration of supportive, client-centered approaches based on individual needs.",
+      "raw_text": "Provided structured interventions and flexible integration of supportive, client-centered approaches based on individual needs.",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Cognitive and Behavioral Therapies",
-      "raw_text": "Cognitive and Behavioral Therapies",
+      "text": "Cognitive and Behavioral Interventions",
+      "raw_text": "Cognitive and Behavioral Interventions",
       "alignment": "None"
     },
     {
@@ -404,8 +404,8 @@
     },
     {
       "type": "paragraph",
-      "text": "CBT for Insomnia (CBT-I)",
-      "raw_text": "CBT for Insomnia (CBT-I)",
+      "text": "CBT for Insomnia",
+      "raw_text": "CBT for Insomnia",
       "alignment": "None"
     },
     {
@@ -422,14 +422,26 @@
     },
     {
       "type": "paragraph",
+      "text": "Enhanced CBT (for eating disorders)",
+      "raw_text": "Enhanced CBT (for eating disorders)",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "CBT for ARFID",
+      "raw_text": "CBT for ARFID",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
       "text": "CBT for Couples Therapy",
       "raw_text": "CBT for Couples Therapy",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "SAMHSA Anger Management Treatment ",
-      "raw_text": "SAMHSA Anger Management Treatment ",
+      "text": "SAMHSA Anger Management Treatment",
+      "raw_text": "SAMHSA Anger Management Treatment",
       "alignment": "None"
     },
     {
@@ -482,8 +494,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Third-Wave Behavioral Therapies",
-      "raw_text": "Third-Wave Behavioral Therapies",
+      "text": "Third-Wave and Mindfulness-Based Interventions",
+      "raw_text": "Third-Wave and Mindfulness-Based Interventions",
       "alignment": "None"
     },
     {
@@ -524,14 +536,14 @@
     },
     {
       "type": "paragraph",
-      "text": "Aug 2025- \t<strong>ISU Department of Psychology</strong>",
-      "raw_text": "Aug 2025- \tISU Department of Psychology",
+      "text": "Aug 2025 -\t<strong>ISU Department of Psychology</strong>",
+      "raw_text": "Aug 2025 -\tISU Department of Psychology",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Present\t\tTitle: Peer Supervisor\t\t         ",
-      "raw_text": "Present\t\tTitle: Peer Supervisor\t\t         ",
+      "text": "Present\tTitle: Peer Supervisor",
+      "raw_text": "Present\tTitle: Peer Supervisor",
       "alignment": "None"
     },
     {
@@ -542,8 +554,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Supervisor: Kathy O’Campo, Ph.D., HSPP",
-      "raw_text": "Supervisor: Kathy O’Campo, Ph.D., HSPP",
+      "text": "Supervisor: Kathy O'Campo, Ph.D., HSPP",
+      "raw_text": "Supervisor: Kathy O'Campo, Ph.D., HSPP",
       "alignment": "None"
     },
     {
@@ -578,14 +590,14 @@
     },
     {
       "type": "paragraph",
-      "text": "Aug 2018- \t<strong>TriStar Centennial Parthenon Pavilion </strong>Title: Peer Supervisor\t\t         ",
-      "raw_text": "Aug 2018- \tTriStar Centennial Parthenon Pavilion Title: Peer Supervisor\t\t         ",
+      "text": "Aug 2018 -\t<strong>TriStar Centennial Parthenon Pavilion</strong>",
+      "raw_text": "Aug 2018 -\tTriStar Centennial Parthenon Pavilion",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Dec 2019\tTitle: Music Therapy Practicum Supervisor",
-      "raw_text": "Dec 2019\tTitle: Music Therapy Practicum Supervisor",
+      "text": "Dec 2019\tTitle: Peer Supervisor / Music Therapy Practicum Supervisor",
+      "raw_text": "Dec 2019\tTitle: Peer Supervisor / Music Therapy Practicum Supervisor",
       "alignment": "None"
     },
     {
@@ -620,7 +632,7 @@
     },
     {
       "type": "paragraph",
-      "text": "<strong>Addition</strong><strong>al </strong><strong>Clinical </strong><strong>Experience</strong>",
+      "text": "<strong>Additional Clinical Experience</strong>",
       "raw_text": "Additional Clinical Experience",
       "alignment": "None"
     },
@@ -632,14 +644,14 @@
     },
     {
       "type": "paragraph",
-      "text": "March 2017-<strong> </strong>\t<strong>TriStar Centennial Parthenon Pavilion</strong><strong>, Outpatient Services</strong>\t\t",
-      "raw_text": "March 2017- \tTriStar Centennial Parthenon Pavilion, Outpatient Services\t\t",
+      "text": "March 2017 -\t<strong>TriStar Centennial Parthenon Pavilion, Outpatient Services</strong>",
+      "raw_text": "March 2017 -\tTriStar Centennial Parthenon Pavilion, Outpatient Services",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "May 2021\tTitle: Group Therapist ",
-      "raw_text": "May 2021\tTitle: Group Therapist ",
+      "text": "May 2021\tTitle: Group Therapist",
+      "raw_text": "May 2021\tTitle: Group Therapist",
       "alignment": "None"
     },
     {
@@ -680,14 +692,8 @@
     },
     {
       "type": "paragraph",
-      "text": "",
-      "raw_text": "",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Adolescent Intensive Outpatient Program (IOP)\t",
-      "raw_text": "Adolescent Intensive Outpatient Program (IOP)\t",
+      "text": "Special Projects",
+      "raw_text": "Special Projects",
       "alignment": "None"
     },
     {
@@ -710,14 +716,20 @@
     },
     {
       "type": "paragraph",
-      "text": "July 2016-<strong> </strong>\t<strong>TriStar Centennial Parthenon Pavilion</strong>\t",
-      "raw_text": "July 2016- \tTriStar Centennial Parthenon Pavilion\t",
+      "text": "",
+      "raw_text": "",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Jan 2017\tTitle: Music Therapy Intern ",
-      "raw_text": "Jan 2017\tTitle: Music Therapy Intern ",
+      "text": "July 2016 -\t<strong>TriStar Centennial Parthenon Pavilion</strong>",
+      "raw_text": "July 2016 -\tTriStar Centennial Parthenon Pavilion",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Jan 2017\tTitle: Music Therapy Intern",
+      "raw_text": "Jan 2017\tTitle: Music Therapy Intern",
       "alignment": "None"
     },
     {
@@ -746,6 +758,12 @@
     },
     {
       "type": "paragraph",
+      "text": "",
+      "raw_text": "",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
       "text": "<strong>Research Experience</strong>",
       "raw_text": "Research Experience",
       "alignment": "None"
@@ -758,20 +776,20 @@
     },
     {
       "type": "paragraph",
-      "text": "Feb 2025-\t<strong>ISU</strong>",
-      "raw_text": "Feb 2025-\tISU",
-      "alignment": "LEFT (0)"
-    },
-    {
-      "type": "paragraph",
-      "text": "Present\t\tDoctoral Dissertation ",
-      "raw_text": "Present\t\tDoctoral Dissertation ",
+      "text": "Feb 2025 - Present\t<strong>Doctoral Dissertation</strong>",
+      "raw_text": "Feb 2025 - Present\tDoctoral Dissertation",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Title: Factors Contributing to Music Performance Anxiety Among College \tMusicians",
-      "raw_text": "Title: Factors Contributing to Music Performance Anxiety Among College \tMusicians",
+      "text": "Title: Factors Contributing to Music Performance Anxiety Among College Musicians",
+      "raw_text": "Title: Factors Contributing to Music Performance Anxiety Among College Musicians",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Institution: ISU",
+      "raw_text": "Institution: ISU",
       "alignment": "None"
     },
     {
@@ -800,20 +818,20 @@
     },
     {
       "type": "paragraph",
-      "text": "Secured IRB approval and began participant recruitment and data collection in Spring 2025",
-      "raw_text": "Secured IRB approval and began participant recruitment and data collection in Spring 2025",
+      "text": "Secured IRB approval and began participant recruitment and data collection in Spring 2025 after obtaining dissertation committee approval",
+      "raw_text": "Secured IRB approval and began participant recruitment and data collection in Spring 2025 after obtaining dissertation committee approval",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Conducting statistical analyses in SPSS and R, including descriptive statistics, multiple regression, ANOVA, and mediation models",
-      "raw_text": "Conducting statistical analyses in SPSS and R, including descriptive statistics, multiple regression, ANOVA, and mediation models",
+      "text": "Anticipate completing data analysis in spring of 2026",
+      "raw_text": "Anticipate completing data analysis in spring of 2026",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Selected validated self-report measures, integrated literature to support theoretical model, and drafted APA-style manuscript sections",
-      "raw_text": "Selected validated self-report measures, integrated literature to support theoretical model, and drafted APA-style manuscript sections",
+      "text": "Anticipate defending final dissertation in summer of 2026",
+      "raw_text": "Anticipate defending final dissertation in summer of 2026",
       "alignment": "None"
     },
     {
@@ -824,15 +842,21 @@
     },
     {
       "type": "paragraph",
-      "text": "Aug 2022-\t<strong>ISU </strong><strong>Psychomusicology</strong><strong> Lab</strong>",
-      "raw_text": "Aug 2022-\tISU Psychomusicology Lab",
+      "text": "Aug 2022 - May 2025\t<strong>Graduate Research Assistant</strong>",
+      "raw_text": "Aug 2022 - May 2025\tGraduate Research Assistant",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "May 2025\tTitle: Graduate Research Assistant\t\t\t\t<strong>          </strong>",
-      "raw_text": "May 2025\tTitle: Graduate Research Assistant\t\t\t\t          ",
-      "alignment": "LEFT (0)"
+      "text": "Title: ISU Psychomusicology Lab",
+      "raw_text": "Title: ISU Psychomusicology Lab",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Institution: ISU",
+      "raw_text": "Institution: ISU",
+      "alignment": "None"
     },
     {
       "type": "paragraph",
@@ -866,26 +890,32 @@
     },
     {
       "type": "paragraph",
-      "text": "Aug 2015-\t<strong>Sylvester Comprehensive Cancer Center</strong><strong>, University of Miami</strong>",
-      "raw_text": "Aug 2015-\tSylvester Comprehensive Cancer Center, University of Miami",
+      "text": "",
+      "raw_text": "",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "April 2016\tTitle: Master’s Clinical Project ",
-      "raw_text": "April 2016\tTitle: Master’s Clinical Project ",
+      "text": "Aug 2015 - April 2016\t<strong>Master's Clinical Project</strong>",
+      "raw_text": "Aug 2015 - April 2016\tMaster's Clinical Project",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Location: Miami, FL ",
-      "raw_text": "Location: Miami, FL ",
+      "text": "Title: A Mindfulness-Based Music Intervention to Decrease Anxiety and Depression in Cancer Patients",
+      "raw_text": "Title: A Mindfulness-Based Music Intervention to Decrease Anxiety and Depression in Cancer Patients",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Project Title: A Mindfulness-Based Music Intervention to Decrease Anxiety and \tDepression in Cancer Patients",
-      "raw_text": "Project Title: A Mindfulness-Based Music Intervention to Decrease Anxiety and \tDepression in Cancer Patients",
+      "text": "Institution: Sylvester Comprehensive Cancer Center, University of Miami",
+      "raw_text": "Institution: Sylvester Comprehensive Cancer Center, University of Miami",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Location: Miami, FL",
+      "raw_text": "Location: Miami, FL",
       "alignment": "None"
     },
     {
@@ -920,26 +950,32 @@
     },
     {
       "type": "paragraph",
-      "text": "Aug 2014-\t<strong>University of Miami</strong>",
-      "raw_text": "Aug 2014-\tUniversity of Miami",
+      "text": "Aug 2014 - May 2016\t<strong>Graduate Assistant</strong>",
+      "raw_text": "Aug 2014 - May 2016\tGraduate Assistant",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "May 2016\tTitle: Graduate Assistant\t\t\t\t\t\t\t      \t\tLocation: Miami, FL",
-      "raw_text": "May 2016\tTitle: Graduate Assistant\t\t\t\t\t\t\t      \t\tLocation: Miami, FL",
+      "text": "Institution: University of Miami",
+      "raw_text": "Institution: University of Miami",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Supervisors: Shannon de l’Etoile, Ph.D. and Teresa Lesiuk, Ph.D.",
-      "raw_text": "Supervisors: Shannon de l’Etoile, Ph.D. and Teresa Lesiuk, Ph.D.",
+      "text": "Location: Miami, FL",
+      "raw_text": "Location: Miami, FL",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Assisted in participant recruitment and scoring of the Myers-Briggs Type Indicator ",
-      "raw_text": "Assisted in participant recruitment and scoring of the Myers-Briggs Type Indicator ",
+      "text": "Supervisors: Shannon de l'Etoile, Ph.D., Teresa Lesiuk, Ph.D.",
+      "raw_text": "Supervisors: Shannon de l'Etoile, Ph.D., Teresa Lesiuk, Ph.D.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Assisted in participant recruitment and scoring of the Myers-Briggs Type Indicator",
+      "raw_text": "Assisted in participant recruitment and scoring of the Myers-Briggs Type Indicator",
       "alignment": "None"
     },
     {
@@ -974,14 +1010,14 @@
     },
     {
       "type": "paragraph",
-      "text": "May 2025-\t<strong>ISU Department of Psychology</strong>",
-      "raw_text": "May 2025-\tISU Department of Psychology",
+      "text": "May 2025 -\t<strong>ISU Department of Psychology</strong>",
+      "raw_text": "May 2025 -\tISU Department of Psychology",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "July 2025\tTitle: Summer Faculty",
-      "raw_text": "July 2025\tTitle: Summer Faculty",
+      "text": "July 2025\tTitle: Adjunct Instructor",
+      "raw_text": "July 2025\tTitle: Adjunct Instructor",
       "alignment": "None"
     },
     {
@@ -998,12 +1034,6 @@
     },
     {
       "type": "paragraph",
-      "text": "Designed and taught an online undergraduate course integrating diversity, professional ethics, and cultural competence in psychology",
-      "raw_text": "Designed and taught an online undergraduate course integrating diversity, professional ethics, and cultural competence in psychology",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
       "text": "Developed all instructional materials, including lectures, assignments, assessments, and grading rubrics",
       "raw_text": "Developed all instructional materials, including lectures, assignments, assessments, and grading rubrics",
       "alignment": "None"
@@ -1016,20 +1046,38 @@
     },
     {
       "type": "paragraph",
+      "text": "Graded and provided feedback on assignments and managed an online gradebook via Canvas",
+      "raw_text": "Graded and provided feedback on assignments and managed an online gradebook via Canvas",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
       "text": "",
       "raw_text": "",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "June 2024-\tTitle: Summer Faculty",
-      "raw_text": "June 2024-\tTitle: Summer Faculty",
+      "text": "June 2024 -\t<strong>ISU Department of Psychology</strong>",
+      "raw_text": "June 2024 -\tISU Department of Psychology",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Aug 2024\tCourse: PSY 101: General Psychology",
-      "raw_text": "Aug 2024\tCourse: PSY 101: General Psychology",
+      "text": "Aug 2024\tTitle: Adjunct Instructor",
+      "raw_text": "Aug 2024\tTitle: Adjunct Instructor",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Location: Terre Haute, IN",
+      "raw_text": "Location: Terre Haute, IN",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Course: PSY 101: General Psychology",
+      "raw_text": "Course: PSY 101: General Psychology",
       "alignment": "None"
     },
     {
@@ -1052,15 +1100,27 @@
     },
     {
       "type": "paragraph",
-      "text": "Aug 2023-\tTitle: Graduate Teaching Assistant",
-      "raw_text": "Aug 2023-\tTitle: Graduate Teaching Assistant",
+      "text": "Aug 2023 -\t<strong>ISU Department of Psychology</strong>",
+      "raw_text": "Aug 2023 -\tISU Department of Psychology",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "May 2024\tCourse: PSY 101: General Psychology",
-      "raw_text": "May 2024\tCourse: PSY 101: General Psychology",
-      "alignment": "LEFT (0)"
+      "text": "May 2024\tTitle: Graduate Teaching Assistant",
+      "raw_text": "May 2024\tTitle: Graduate Teaching Assistant",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Location: Terre Haute, IN",
+      "raw_text": "Location: Terre Haute, IN",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Course: PSY 101: General Psychology",
+      "raw_text": "Course: PSY 101: General Psychology",
+      "alignment": "None"
     },
     {
       "type": "paragraph",
@@ -1070,8 +1130,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Assisted with two in-person sections each semester (~35 students per section) of undergraduate introductory psychology",
-      "raw_text": "Assisted with two in-person sections each semester (~35 students per section) of undergraduate introductory psychology",
+      "text": "Taught two in-person sections each semester (~35 students per section) of undergraduate introductory psychology",
+      "raw_text": "Taught two in-person sections each semester (~35 students per section) of undergraduate introductory psychology",
       "alignment": "None"
     },
     {
@@ -1088,165 +1148,9 @@
     },
     {
       "type": "paragraph",
-      "text": "<strong>Honors, Awards, & Scholarships</strong>",
-      "raw_text": "Honors, Awards, & Scholarships",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "2025\t\tISU Graduate Student Research Grant ",
-      "raw_text": "2025\t\tISU Graduate Student Research Grant ",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "2024\t\tBakerman Student Research Award",
-      "raw_text": "2024\t\tBakerman Student Research Award",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "2016\t\tAward of Academic Merit, University of Miami",
-      "raw_text": "2016\t\tAward of Academic Merit, University of Miami",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "2014-2016\tFrost School of Music Graduate Teaching Assistantship (Annual)",
-      "raw_text": "2014-2016\tFrost School of Music Graduate Teaching Assistantship (Annual)",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "2014-2016\tFrost School of Music Tuition Scholarship (Annual)",
-      "raw_text": "2014-2016\tFrost School of Music Tuition Scholarship (Annual)",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "2013-2014\tGA Partial Tuition Waiver, University of Miami",
-      "raw_text": "2013-2014\tGA Partial Tuition Waiver, University of Miami",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "2009\t\tDean’s List, Eastman School of Music ",
-      "raw_text": "2009\t\tDean’s List, Eastman School of Music ",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "2004-2010\tHoward Hanson Four-Year Merit Scholarship, Eastman School of Music",
-      "raw_text": "2004-2010\tHoward Hanson Four-Year Merit Scholarship, Eastman School of Music",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "",
-      "raw_text": "",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "<strong>Presentations</strong>",
-      "raw_text": "Presentations",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "",
-      "raw_text": "",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Britton, J. (2025, September). <em>Ethical and Effective Use of AI in Clinical Care: Applications and Limits</em><em> </em>[Academic presentation]. Clients & Science Seminar Series, Indiana State University, Terre Haute, IN.",
-      "raw_text": "Britton, J. (2025, September). Ethical and Effective Use of AI in Clinical Care: Applications and Limits [Academic presentation]. Clients & Science Seminar Series, Indiana State University, Terre Haute, IN.",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Britton, J. (2025, September). <em>Generative AI quick start for clinicians</em> [Professional presentation]. Murphy, Urban, & Associates, Terre Haute, IN",
-      "raw_text": "Britton, J. (2025, September). Generative AI quick start for clinicians [Professional presentation]. Murphy, Urban, & Associates, Terre Haute, IN",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Britton, J. (2025, August). <em>AI Hackathon: Exploring Clinical Use Cases Across the Psy.D. Program</em> [Academic presentation]. Indiana State University Department of Psychology, Terre Haute, IN",
-      "raw_text": "Britton, J. (2025, August). AI Hackathon: Exploring Clinical Use Cases Across the Psy.D. Program [Academic presentation]. Indiana State University Department of Psychology, Terre Haute, IN",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Britton, J. (2025, August). <em>AI in Graduate Training: Risks, Tools, and Opportunities</em> [Panel presentation]. Graduate Assistant Orientation, Indiana State University, Terre Haute, IN.",
-      "raw_text": "Britton, J. (2025, August). AI in Graduate Training: Risks, Tools, and Opportunities [Panel presentation]. Graduate Assistant Orientation, Indiana State University, Terre Haute, IN.",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Britton, J. (2025, January). <em>Finding strength and balance: Addressing burnout in Healthcare</em> [Professional presentation]. Clay City Center for Family Medicine, Clay City, IN",
-      "raw_text": "Britton, J. (2025, January). Finding strength and balance: Addressing burnout in Healthcare [Professional presentation]. Clay City Center for Family Medicine, Clay City, IN",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Britton, J. (2023, April). <em>Upward and downward social comparison when listening to sad music</em> [Poster presentation]. Midwestern Psychological Association Conference, Chicago, IL. ",
-      "raw_text": "Britton, J. (2023, April). Upward and downward social comparison when listening to sad music [Poster presentation]. Midwestern Psychological Association Conference, Chicago, IL. ",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Gelfand, A., Johnson, T., Todd, B., Bedore, P., & <strong>Britton, J.</strong> (2023, April). <em>Potential links between sad music listening, rumination, and depression</em> [Poster presentation]. Midwestern Psychological Association Conference, Chicago, IL. ",
-      "raw_text": "Gelfand, A., Johnson, T., Todd, B., Bedore, P., & Britton, J. (2023, April). Potential links between sad music listening, rumination, and depression [Poster presentation]. Midwestern Psychological Association Conference, Chicago, IL. ",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Britton, J. (2018, April). <em>Working with </em><em>the</em><em> suicidal client</em> [Conference presentation]. Star Center Music Therapy Conference, Jackson, TN.",
-      "raw_text": "Britton, J. (2018, April). Working with the suicidal client [Conference presentation]. Star Center Music Therapy Conference, Jackson, TN.",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Killingsworth, A., <strong>Britton, J.</strong> (2017, May). <em>“Big T” and “little t” trauma </em>[Professional presentation]. Lipscomb University Wellness 66 Seminar, Nashville, TN.",
-      "raw_text": "Killingsworth, A., Britton, J. (2017, May). “Big T” and “little t” trauma [Professional presentation]. Lipscomb University Wellness 66 Seminar, Nashville, TN.",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Britton, J.<strong> </strong>(2016, May). <em>Music and mindfulness </em>[Professional presentation]. Lipscomb University Wellness 66 Seminar, Nashville, TN. ",
-      "raw_text": "Britton, J. (2016, May). Music and mindfulness [Professional presentation]. Lipscomb University Wellness 66 Seminar, Nashville, TN. ",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Britton, J. (2016, March). <em>An introduction to mindfulness using music listening and instrument playing </em>[Conference presentation]. SER American Music Therapy Conference, Macon, GA.",
-      "raw_text": "Britton, J. (2016, March). An introduction to mindfulness using music listening and instrument playing [Conference presentation]. SER American Music Therapy Conference, Macon, GA.",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Britton, J. (2015, March). <em>The effect of instrumental improvisation on selective attention in typical adults</em> [Poster presentation], SER American Music Therapy Conference, Columbia, SC",
-      "raw_text": "Britton, J. (2015, March). The effect of instrumental improvisation on selective attention in typical adults [Poster presentation], SER American Music Therapy Conference, Columbia, SC",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Britton, J. (2015, October)., <em>Music and mindfulness</em> [Professional presentation], University of Miami medical campus staff and multiple sclerosis support group, Miami, FL",
-      "raw_text": "Britton, J. (2015, October)., Music and mindfulness [Professional presentation], University of Miami medical campus staff and multiple sclerosis support group, Miami, FL",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "",
-      "raw_text": "",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
       "text": "<strong>Administrative and Educational Roles</strong>",
       "raw_text": "Administrative and Educational Roles",
-      "alignment": "LEFT (0)"
+      "alignment": "None"
     },
     {
       "type": "paragraph",
@@ -1256,14 +1160,20 @@
     },
     {
       "type": "paragraph",
-      "text": "June 2021-\t<strong>Board of Child Care, Caminos Program</strong>",
-      "raw_text": "June 2021-\tBoard of Child Care, Caminos Program",
+      "text": "June 2021 -\t<strong>Board of Child Care, Caminos Program</strong>",
+      "raw_text": "June 2021 -\tBoard of Child Care, Caminos Program",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "May 2022\tTitle: Quality Improvement Associate\t\t\t\t<strong>           </strong>\t\t\tLocation: Baltimore, MD",
-      "raw_text": "May 2022\tTitle: Quality Improvement Associate\t\t\t\t           \t\t\tLocation: Baltimore, MD",
+      "text": "May 2022\tTitle: Quality Improvement Associate",
+      "raw_text": "May 2022\tTitle: Quality Improvement Associate",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Location: Baltimore, MD",
+      "raw_text": "Location: Baltimore, MD",
       "alignment": "None"
     },
     {
@@ -1292,32 +1202,14 @@
     },
     {
       "type": "paragraph",
-      "text": "June 2014-\t<strong>London Achievement Processes</strong>",
-      "raw_text": "June 2014-\tLondon Achievement Processes",
+      "text": "",
+      "raw_text": "",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Aug 2015\tTitle: Summer Tutor",
-      "raw_text": "Aug 2015\tTitle: Summer Tutor",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Location<strong>: </strong>Miami, FL<strong> </strong>\t\t\t\t\t\t<strong>      </strong>",
-      "raw_text": "Location: Miami, FL \t\t\t\t\t\t      ",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Provided one-on-one tutoring in reading and comprehension for children ages 5–12 with learning disabilities, behavioral challenges, and autism spectrum disorder",
-      "raw_text": "Provided one-on-one tutoring in reading and comprehension for children ages 5–12 with learning disabilities, behavioral challenges, and autism spectrum disorder",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Trained in Lindamood-Bell’s Seeing Stars® program for symbol imagery and phonological awareness",
-      "raw_text": "Trained in Lindamood-Bell’s Seeing Stars® program for symbol imagery and phonological awareness",
+      "text": "<strong>Honors and Awards</strong>",
+      "raw_text": "Honors and Awards",
       "alignment": "None"
     },
     {
@@ -1328,9 +1220,177 @@
     },
     {
       "type": "paragraph",
-      "text": "<strong>Technology and </strong><strong>Digital Tools</strong>",
+      "text": "2025\tISU Graduate Student Research Grant",
+      "raw_text": "2025\tISU Graduate Student Research Grant",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "2024\tBakerman Student Research Award",
+      "raw_text": "2024\tBakerman Student Research Award",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "2016\tAward of Academic Merit, University of Miami",
+      "raw_text": "2016\tAward of Academic Merit, University of Miami",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "2014-2016\tFrost School of Music Graduate Teaching Assistantship (Annual)",
+      "raw_text": "2014-2016\tFrost School of Music Graduate Teaching Assistantship (Annual)",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "2014-2016\tFrost School of Music Tuition Scholarship (Annual)",
+      "raw_text": "2014-2016\tFrost School of Music Tuition Scholarship (Annual)",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "2013-2014\tGA Partial Tuition Waiver, University of Miami",
+      "raw_text": "2013-2014\tGA Partial Tuition Waiver, University of Miami",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "2009\tDean's List, Eastman School of Music",
+      "raw_text": "2009\tDean's List, Eastman School of Music",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "2004-2010\tHoward Hanson Four-Year Merit Scholarship, Eastman School of Music",
+      "raw_text": "2004-2010\tHoward Hanson Four-Year Merit Scholarship, Eastman School of Music",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "raw_text": "",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Presentations</strong>",
+      "raw_text": "Presentations",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "raw_text": "",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Research Presentations",
+      "raw_text": "Research Presentations",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Britton, J.</strong> (2023, April). <em>Upward and downward social comparison when listening to sad music</em> [Poster presentation]. Midwestern Psychological Association Conference, Chicago, IL.",
+      "raw_text": "Britton, J. (2023, April). Upward and downward social comparison when listening to sad music [Poster presentation]. Midwestern Psychological Association Conference, Chicago, IL.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Gelfand, A., Johnson, T., Todd, B., Bedore, P., <strong>Britton, J.</strong> (2023, April). <em>Potential links between sad music listening, rumination, and depression</em> [Poster presentation]. Midwestern Psychological Association Conference, Chicago, IL.",
+      "raw_text": "Gelfand, A., Johnson, T., Todd, B., Bedore, P., Britton, J. (2023, April). Potential links between sad music listening, rumination, and depression [Poster presentation]. Midwestern Psychological Association Conference, Chicago, IL.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Britton, J.</strong> (2016, March). <em>An introduction to mindfulness using music listening and instrument playing</em> [Conference presentation]. SER American Music Therapy Conference, Macon, GA.",
+      "raw_text": "Britton, J. (2016, March). An introduction to mindfulness using music listening and instrument playing [Conference presentation]. SER American Music Therapy Conference, Macon, GA.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Britton, J.</strong> (2015, March). <em>The effect of instrumental improvisation on selective attention in typical adults</em> [Poster presentation]. SER American Music Therapy Conference, Columbia, SC.",
+      "raw_text": "Britton, J. (2015, March). The effect of instrumental improvisation on selective attention in typical adults [Poster presentation]. SER American Music Therapy Conference, Columbia, SC.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "raw_text": "",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Professional and Invited Presentations",
+      "raw_text": "Professional and Invited Presentations",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Britton, J.</strong> (2025, September). <em>Use of AI: Practical and ethical considerations</em> [Academic presentation]. Clients & Science Seminar Series, Indiana State University, Terre Haute, IN.",
+      "raw_text": "Britton, J. (2025, September). Use of AI: Practical and ethical considerations [Academic presentation]. Clients & Science Seminar Series, Indiana State University, Terre Haute, IN.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Britton, J.</strong> (2025, September). <em>Generative AI quick start for clinicians</em> [Professional presentation]. Murphy, Urban, & Associates, Terre Haute, IN.",
+      "raw_text": "Britton, J. (2025, September). Generative AI quick start for clinicians [Professional presentation]. Murphy, Urban, & Associates, Terre Haute, IN.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Britton, J.</strong> (2025, August). <em>AI Hackathon: Exploring Clinical Use Cases Across the Psy.D. Program</em> [Academic presentation]. Indiana State University Department of Psychology, Terre Haute, IN.",
+      "raw_text": "Britton, J. (2025, August). AI Hackathon: Exploring Clinical Use Cases Across the Psy.D. Program [Academic presentation]. Indiana State University Department of Psychology, Terre Haute, IN.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Britton, J.</strong> (2025, August). <em>AI in Graduate Training: Risks, Tools, and Opportunities</em> [Panel presentation]. Graduate Assistant Orientation, Indiana State University, Terre Haute, IN.",
+      "raw_text": "Britton, J. (2025, August). AI in Graduate Training: Risks, Tools, and Opportunities [Panel presentation]. Graduate Assistant Orientation, Indiana State University, Terre Haute, IN.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Britton, J.</strong> (2025, January). <em>Finding strength and balance: Addressing burnout in Healthcare</em> [Professional presentation]. Clay City Center for Family Medicine, Clay City, IN.",
+      "raw_text": "Britton, J. (2025, January). Finding strength and balance: Addressing burnout in Healthcare [Professional presentation]. Clay City Center for Family Medicine, Clay City, IN.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Britton, J.</strong> (2018, April). <em>Working with the suicidal client</em> [Conference presentation]. Star Center Music Therapy Conference, Jackson, TN.",
+      "raw_text": "Britton, J. (2018, April). Working with the suicidal client [Conference presentation]. Star Center Music Therapy Conference, Jackson, TN.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Killingsworth, A., <strong>Britton, J.</strong> (2017, May). <em>\"Big T\" and \"little t\" trauma</em> [Professional presentation]. Lipscomb University Wellness 66 Seminar, Nashville, TN.",
+      "raw_text": "Killingsworth, A., Britton, J. (2017, May). \"Big T\" and \"little t\" trauma [Professional presentation]. Lipscomb University Wellness 66 Seminar, Nashville, TN.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Britton, J.</strong> (2016, May). <em>Music and mindfulness</em> [Professional presentation]. Lipscomb University Wellness 66 Seminar, Nashville, TN.",
+      "raw_text": "Britton, J. (2016, May). Music and mindfulness [Professional presentation]. Lipscomb University Wellness 66 Seminar, Nashville, TN.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Britton, J.</strong> (2015, October). <em>Music and mindfulness</em> [Professional presentation]. University of Miami medical campus staff and multiple sclerosis support group, Miami, FL.",
+      "raw_text": "Britton, J. (2015, October). Music and mindfulness [Professional presentation]. University of Miami medical campus staff and multiple sclerosis support group, Miami, FL.",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "raw_text": "",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Technology and Digital Tools</strong>",
       "raw_text": "Technology and Digital Tools",
-      "alignment": "LEFT (0)"
+      "alignment": "None"
     },
     {
       "type": "paragraph",
@@ -1340,8 +1400,38 @@
     },
     {
       "type": "paragraph",
-      "text": "<strong>Artificial</strong><strong> Intelligence (AI) Tools and Applications</strong>",
+      "text": "<strong>Artificial Intelligence (AI) Tools and Applications</strong>",
       "raw_text": "Artificial Intelligence (AI) Tools and Applications",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Sep 2025\tLocalScribe",
+      "raw_text": "Sep 2025\tLocalScribe",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Privacy-first, local AI application (in development) designed to support psychologists in drafting notes and reports",
+      "raw_text": "Privacy-first, local AI application (in development) designed to support psychologists in drafting notes and reports",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Built on open-source models adapted for clinical documentation to ensure relevance and PHI protection",
+      "raw_text": "Built on open-source models adapted for clinical documentation to ensure relevance and PHI protection",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Link: Website",
+      "raw_text": "Link: Website",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "raw_text": "",
       "alignment": "None"
     },
     {
@@ -1358,38 +1448,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Available at Interactive CV",
-      "raw_text": "Available at Interactive CV",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "",
-      "raw_text": "",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Sep 2025\tTreatment Plan Scribe ",
-      "raw_text": "Sep 2025\tTreatment Plan Scribe ",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Custom GPT co-designed with ISU faculty to support students in generating ethical, goal-oriented treatment plans for clinical use",
-      "raw_text": "Custom GPT co-designed with ISU faculty to support students in generating ethical, goal-oriented treatment plans for clinical use",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Provided example templates and structured prompting to guide problem formulation and treatment planning",
-      "raw_text": "Provided example templates and structured prompting to guide problem formulation and treatment planning",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Available at ",
-      "raw_text": "Available at Treatment Plan GPT",
+      "text": "Link: https://jcbritton23.github.io/JohnBrittonCV/",
+      "raw_text": "Link: https://jcbritton23.github.io/JohnBrittonCV/",
       "alignment": "None"
     },
     {
@@ -1418,8 +1478,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Available at ",
-      "raw_text": "Available at PSY 321 GPT",
+      "text": "Link: https://chatgpt.com/g/g-681b9e9c5ec08191a4a670a1fc80d9c7-psy-321-course-chat",
+      "raw_text": "Link: https://chatgpt.com/g/g-681b9e9c5ec08191a4a670a1fc80d9c7-psy-321-course-chat",
       "alignment": "None"
     },
     {
@@ -1430,38 +1490,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Jan 2025\tUnconscious Bias Identifier",
-      "raw_text": "Jan 2025\tUnconscious Bias Identifier",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Custom GPT adapted from Buster Benson’s “Cognitive Bias Cheat Sheet” to promote awareness of unconscious cognitive distortions",
-      "raw_text": "Custom GPT adapted from Buster Benson’s “Cognitive Bias Cheat Sheet” to promote awareness of unconscious cognitive distortions",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Designed for use in teaching and supervision to support reflection on personal and systemic bias",
-      "raw_text": "Designed for use in teaching and supervision to support reflection on personal and systemic bias",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Available at ",
-      "raw_text": "Available at Bias Identifier GPT",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "",
-      "raw_text": "",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Aug 2024 \tAPA Ethics Dilemma Decision Making and Discussion ",
-      "raw_text": "Aug 2024 \tAPA Ethics Dilemma Decision Making and Discussion ",
+      "text": "Aug 2024\tAPA Ethics Dilemma Decision Making and Discussion",
+      "raw_text": "Aug 2024\tAPA Ethics Dilemma Decision Making and Discussion",
       "alignment": "None"
     },
     {
@@ -1478,26 +1508,26 @@
     },
     {
       "type": "paragraph",
-      "text": "Available at ",
-      "raw_text": "Available at APA Ethics GPT",
+      "text": "Link: https://chatgpt.com/g/g-l3HZnoKZC-apa-ethics-dilemma-decision-making-and-discussion",
+      "raw_text": "Link: https://chatgpt.com/g/g-l3HZnoKZC-apa-ethics-dilemma-decision-making-and-discussion",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "  ",
-      "raw_text": "  ",
+      "text": "",
+      "raw_text": "",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Jul 2024 \tClient Psych Handout Generator",
-      "raw_text": "Jul 2024 \tClient Psych Handout Generator",
+      "text": "Jul 2024\tClient Psych Handout Generator",
+      "raw_text": "Jul 2024\tClient Psych Handout Generator",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Custom GPT designed to guide creation of personalized, interactive, evidence-based handouts for clients using structured prompts and collaborative Canvas documents",
-      "raw_text": "Custom GPT designed to guide creation of personalized, interactive, evidence-based handouts for clients using structured prompts and collaborative Canvas documents",
+      "text": "Custom GPT designed to guide creation of personalized, interactive, evidence-based handouts for clients using structured prompts",
+      "raw_text": "Custom GPT designed to guide creation of personalized, interactive, evidence-based handouts for clients using structured prompts",
       "alignment": "None"
     },
     {
@@ -1508,14 +1538,14 @@
     },
     {
       "type": "paragraph",
-      "text": "Available at ",
-      "raw_text": "Available at Client Handout GPT",
+      "text": "Link: https://chatgpt.com/g/g-6761f10b5d6c8191a24c650b27a83c5e-client-psychhandout",
+      "raw_text": "Link: https://chatgpt.com/g/g-6761f10b5d6c8191a24c650b27a83c5e-client-psychhandout",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "  ",
-      "raw_text": "  ",
+      "text": "",
+      "raw_text": "",
       "alignment": "None"
     },
     {
@@ -1532,20 +1562,20 @@
     },
     {
       "type": "paragraph",
-      "text": "2024-Present\tAmerican Psychological Association, Student Member",
-      "raw_text": "2024-Present\tAmerican Psychological Association, Student Member",
+      "text": "2024-Present\tAmerican Psychological Association\tStudent Member",
+      "raw_text": "2024-Present\tAmerican Psychological Association\tStudent Member",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "2022-Present\tPsychology Graduate Student Organization ",
-      "raw_text": "2022-Present\tPsychology Graduate Student Organization ",
+      "text": "2022-Present\tPsychology Graduate Student Organization",
+      "raw_text": "2022-Present\tPsychology Graduate Student Organization",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "2017-Present\tBoard-Certified Music Therapist, Certification Board for Music Therapists\t",
-      "raw_text": "2017-Present\tBoard-Certified Music Therapist, Certification Board for Music Therapists\t",
+      "text": "2017-Present\tBoard-Certified Music Therapist\tCertification Board for Music Therapists",
+      "raw_text": "2017-Present\tBoard-Certified Music Therapist\tCertification Board for Music Therapists",
       "alignment": "None"
     },
     {
@@ -1556,8 +1586,8 @@
     },
     {
       "type": "paragraph",
-      "text": "2015-2022\tMember, American Music Therapy Association",
-      "raw_text": "2015-2022\tMember, American Music Therapy Association",
+      "text": "2015-2022\tAmerican Music Therapy Association\tMember",
+      "raw_text": "2015-2022\tAmerican Music Therapy Association\tMember",
       "alignment": "None"
     },
     {
@@ -1568,14 +1598,26 @@
     },
     {
       "type": "paragraph",
-      "text": "<strong>Selected </strong><strong>Trainings and Continuing Education</strong>",
-      "raw_text": "Selected Trainings and Continuing Education",
-      "alignment": "LEFT (0)"
+      "text": "<strong>Training and Continuing Education</strong>",
+      "raw_text": "Training and Continuing Education",
+      "alignment": "None"
     },
     {
       "type": "paragraph",
       "text": "",
       "raw_text": "",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Jul 2025\tOpportunity, Challenge, and Shaping the Future of AI (APA webinar, online)",
+      "raw_text": "Jul 2025\tOpportunity, Challenge, and Shaping the Future of AI (APA webinar, online)",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Presenters: Eduardo Bunge, Ph.D., Jenna Carl, Ph.D., Grin Lord, Psy.D., ABPP, Mindy Shoss, Ph.D.",
+      "raw_text": "Presenters: Eduardo Bunge, Ph.D., Jenna Carl, Ph.D., Grin Lord, Psy.D., ABPP, Mindy Shoss, Ph.D.",
       "alignment": "None"
     },
     {
@@ -1586,8 +1628,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Presenters: Kenneth I. Pargament, Ph.D. and Michael J. Pearce, Ph.D.",
-      "raw_text": "Presenters: Kenneth I. Pargament, Ph.D. and Michael J. Pearce, Ph.D.",
+      "text": "Presenters: Kenneth I. Pargament, Ph.D., Michael J. Pearce, Ph.D.",
+      "raw_text": "Presenters: Kenneth I. Pargament, Ph.D., Michael J. Pearce, Ph.D.",
       "alignment": "None"
     },
     {
@@ -1646,8 +1688,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Presenters: Kathy O’Campo, Ph.D. and Paige Bedore, M.S.",
-      "raw_text": "Presenters: Kathy O’Campo, Ph.D. and Paige Bedore, M.S.",
+      "text": "Presenters: Kathy O'Campo, Ph.D., Paige Bedore, M.S.",
+      "raw_text": "Presenters: Kathy O'Campo, Ph.D., Paige Bedore, M.S.",
       "alignment": "None"
     },
     {
@@ -1688,8 +1730,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Dec 2017\tAcceptance & Commitment Therapy - ACT for adolescents (online course)",
-      "raw_text": "Dec 2017\tAcceptance & Commitment Therapy - ACT for adolescents (online course)",
+      "text": "Dec 2017\tAcceptance & Commitment Therapy - ACT for Adolescents (online course)",
+      "raw_text": "Dec 2017\tAcceptance & Commitment Therapy - ACT for Adolescents (online course)",
       "alignment": "None"
     },
     {
@@ -1718,14 +1760,14 @@
     },
     {
       "type": "paragraph",
-      "text": "Aug 2022-\t<strong>Community and Church Service</strong>",
-      "raw_text": "Aug 2022-\tCommunity and Church Service",
+      "text": "Aug 2022 - Present\t<strong>Community and Church Service</strong>",
+      "raw_text": "Aug 2022 - Present\tCommunity and Church Service",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Present\t\tTitle: Volunteer Musician and Service Volunteer",
-      "raw_text": "Present\t\tTitle: Volunteer Musician and Service Volunteer",
+      "text": "Title: Volunteer Musician and Service Volunteer",
+      "raw_text": "Title: Volunteer Musician and Service Volunteer",
       "alignment": "None"
     },
     {
@@ -1748,8 +1790,8 @@
     },
     {
       "type": "paragraph",
-      "text": "Engaged in community outreach events focused on inclusion and service, such as Hamilton Center’s Diversity Walk and Manna from Seven food distribution",
-      "raw_text": "Engaged in community outreach events focused on inclusion and service, such as Hamilton Center’s Diversity Walk and Manna from Seven food distribution",
+      "text": "Engaged in community outreach events focused on inclusion and service, such as Hamilton Center's Diversity Walk and Manna from Seven food distribution",
+      "raw_text": "Engaged in community outreach events focused on inclusion and service, such as Hamilton Center's Diversity Walk and Manna from Seven food distribution",
       "alignment": "None"
     },
     {
@@ -1760,20 +1802,20 @@
     },
     {
       "type": "paragraph",
-      "text": "Aug 2017-\t<strong>TriStar Centennial, Alzheimer’s Association</strong>",
-      "raw_text": "Aug 2017-\tTriStar Centennial, Alzheimer’s Association",
+      "text": "Aug 2017 - Sep 2019\t<strong>TriStar Centennial, Alzheimer's Association</strong>",
+      "raw_text": "Aug 2017 - Sep 2019\tTriStar Centennial, Alzheimer's Association",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Sep 2019\tTitle: Team Captain, Walk to End Alzheimer’s",
-      "raw_text": "Sep 2019\tTitle: Team Captain, Walk to End Alzheimer’s",
+      "text": "Title: Team Captain, Walk to End Alzheimer's",
+      "raw_text": "Title: Team Captain, Walk to End Alzheimer's",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Location: Nashville, TN\t\t",
-      "raw_text": "Location: Nashville, TN\t\t",
+      "text": "Location: Nashville, TN",
+      "raw_text": "Location: Nashville, TN",
       "alignment": "None"
     },
     {
@@ -1790,14 +1832,20 @@
     },
     {
       "type": "paragraph",
-      "text": "Aug 2006-\t<strong>Church of Jesus Christ of Latter-Day Saints</strong>",
-      "raw_text": "Aug 2006-\tChurch of Jesus Christ of Latter-Day Saints",
+      "text": "Aug 2006 - Aug 2008\t<strong>Church of Jesus Christ of Latter-Day Saints</strong>",
+      "raw_text": "Aug 2006 - Aug 2008\tChurch of Jesus Christ of Latter-Day Saints",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Aug 2008\tTitle: Missionary\t\t\t\t\t\t\t\t\t\tLocation: Detroit, MI",
-      "raw_text": "Aug 2008\tTitle: Missionary\t\t\t\t\t\t\t\t\t\tLocation: Detroit, MI",
+      "text": "Title: Missionary",
+      "raw_text": "Title: Missionary",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Location: Detroit, MI",
+      "raw_text": "Location: Detroit, MI",
       "alignment": "None"
     },
     {
@@ -1820,8 +1868,56 @@
     },
     {
       "type": "paragraph",
+      "text": "",
+      "raw_text": "",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
       "text": "<strong>References</strong>",
       "raw_text": "References",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "",
+      "raw_text": "",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "<strong>Elizabeth (Liz) O'Laughlin, Ph.D., HSPP</strong>",
+      "raw_text": "Elizabeth (Liz) O'Laughlin, Ph.D., HSPP",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Professor and Director of Training, Clinical Supervisor",
+      "raw_text": "Professor and Director of Training, Clinical Supervisor",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Indiana State University, Department of Psychology",
+      "raw_text": "Indiana State University, Department of Psychology",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Terre Haute, IN",
+      "raw_text": "Terre Haute, IN",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Phone: (812) 237-2455",
+      "raw_text": "Phone: (812) 237-2455",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Email: Liz.O'laughlin@indstate.edu",
+      "raw_text": "Email: Liz.O'laughlin@indstate.edu",
       "alignment": "None"
     },
     {
@@ -1838,48 +1934,12 @@
     },
     {
       "type": "paragraph",
-      "text": "Indiana State University, Department of Psychology",
-      "raw_text": "Indiana State University, Department of Psychology",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "Terre Haute, IN",
-      "raw_text": "Terre Haute, IN",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
       "text": "Assistant Professor, Clinical Supervisor",
       "raw_text": "Assistant Professor, Clinical Supervisor",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Work Phone: (812) 237-2465",
-      "raw_text": "Work Phone: (812) 237-2465",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "",
-      "raw_text": "Liz.Smith@indstate.edu",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "",
-      "raw_text": "",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": "<strong>Thomas Johnson, Ph.D., HSPP</strong>",
-      "raw_text": "Thomas Johnson, Ph.D., HSPP",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
       "text": "Indiana State University, Department of Psychology",
       "raw_text": "Indiana State University, Department of Psychology",
       "alignment": "None"
@@ -1892,20 +1952,14 @@
     },
     {
       "type": "paragraph",
-      "text": "Professor",
-      "raw_text": "Professor",
+      "text": "Phone: (812) 237-2465",
+      "raw_text": "Phone: (812) 237-2465",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "Work Phone: (812) 237-2449",
-      "raw_text": "Work Phone: (812) 237-2449",
-      "alignment": "None"
-    },
-    {
-      "type": "paragraph",
-      "text": " ",
-      "raw_text": "Thomas.Johnson@indstate.edu ",
+      "text": "Email: Liz.Smith@indstate.edu",
+      "raw_text": "Email: Liz.Smith@indstate.edu",
       "alignment": "None"
     },
     {
@@ -1916,20 +1970,38 @@
     },
     {
       "type": "paragraph",
-      "text": "",
-      "raw_text": "",
+      "text": "<strong>Michael Urban, Psy.D., HSPP</strong>",
+      "raw_text": "Michael Urban, Psy.D., HSPP",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "",
-      "raw_text": "",
+      "text": "Clinical Supervisor",
+      "raw_text": "Clinical Supervisor",
       "alignment": "None"
     },
     {
       "type": "paragraph",
-      "text": "",
-      "raw_text": "",
+      "text": "Murphy Urban & Associates",
+      "raw_text": "Murphy Urban & Associates",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Terre Haute, IN",
+      "raw_text": "Terre Haute, IN",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Phone: (812) 235-6121",
+      "raw_text": "Phone: (812) 235-6121",
+      "alignment": "None"
+    },
+    {
+      "type": "paragraph",
+      "text": "Email: murban@murphyurbanassociates.com",
+      "raw_text": "Email: murban@murphyurbanassociates.com",
       "alignment": "None"
     },
     {
@@ -1940,7 +2012,7 @@
     }
   ],
   "metadata": {
-    "total_blocks": 323,
-    "source_file": "John Britton Curriculum Vitae (CV) (1).docx"
+    "total_blocks": 335,
+    "source_file": "Generated from provided data"
   }
 }
