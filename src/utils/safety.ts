@@ -36,46 +36,20 @@ const getOpenAIClient = (): OpenAI | null => {
   }
 };
 
-// Basic safety filters to block clearly harmful or sensitive queries
-const PROFANITY_WORDS: string[] = [];
-const TOXIC_PATTERNS = [/kill/i, /harm/i, /hurt/i, /attack/i, /bomb/i, /weapon/i];
-const PERSONAL_INFO_PATTERNS = [/ssn|social security/i, /credit card|cc number/i, /password/i, /bank account/i];
-const FORBIDDEN_PATTERNS = [
-  /suicide|self[- ]?harm|kill myself|hurt myself|ending my life|overdose|cutting|risk of harm|homicide|violence|abuse|assault|danger to self|danger to others|crisis|emergency|911|hotline/i,
-];
-
 export const sanitizeQuery = (query: string): SafetyFilter => {
-  const originalQuery = query.trim();
+  const trimmedQuery = query.trim();
   const warnings: string[] = [];
 
-  if (!originalQuery) {
+  if (!trimmedQuery) {
     return { isSafe: false, sanitizedQuery: '', warnings: ['Please provide a valid question.'] };
   }
 
-  if (FORBIDDEN_PATTERNS.some(p => p.test(originalQuery))) {
-    return { isSafe: false, sanitizedQuery: originalQuery, warnings: ["I'm sorry, I can't discuss that topic."] };
-  }
+  let sanitizedQuery = trimmedQuery;
+  const MAX_LENGTH = 1000;
 
-  let sanitizedQuery = originalQuery;
-
-  if (sanitizedQuery.length > 500) {
-    warnings.push('Query is quite long and has been shortened for processing.');
-    sanitizedQuery = sanitizedQuery.slice(0, 500);
-  }
-
-  if (PROFANITY_WORDS.length && PROFANITY_WORDS.some(w => sanitizedQuery.toLowerCase().includes(w))) {
-    warnings.push('Some language was softened for clarity.');
-    sanitizedQuery = sanitizedQuery.replace(new RegExp(PROFANITY_WORDS.join('|'), 'gi'), '[REDACTED]');
-  }
-
-  if (TOXIC_PATTERNS.some(p => p.test(sanitizedQuery))) {
-    warnings.push('Potentially harmful phrasing was softened before sending.');
-    sanitizedQuery = sanitizedQuery.replace(/kill|harm|hurt|attack|bomb|weapon/gi, '[REDACTED]');
-  }
-
-  if (PERSONAL_INFO_PATTERNS.some(p => p.test(sanitizedQuery))) {
-    warnings.push('Sensitive personal details were removed before processing.');
-    sanitizedQuery = sanitizedQuery.replace(/ssn|social security|credit card|cc number|password|bank account/gi, '[REDACTED]');
+  if (sanitizedQuery.length > MAX_LENGTH) {
+    warnings.push(`Query was trimmed to ${MAX_LENGTH} characters for processing.`);
+    sanitizedQuery = sanitizedQuery.slice(0, MAX_LENGTH);
   }
 
   return { isSafe: true, sanitizedQuery, warnings };
