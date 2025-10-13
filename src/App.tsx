@@ -135,7 +135,7 @@ const App: React.FC = () => {
 
   const handleDownloadPDF = () => {
     const link = document.createElement('a');
-    link.href = '/John Britton Curriculum Vitae (CV).pdf';
+    link.href = '/John_Britton_CV.pdf';
     link.download = 'John_Britton_CV.pdf';
     link.click();
   };

@@ -68,7 +68,7 @@ Once deployed, the site will be available at: [https://jcbritton23.github.io/Joh
 ├── postcss.config.js          # PostCSS configuration
 ├── index.html                 # HTML entry point
 ├── public/                    # Static assets
-│   └── John Britton Curriculum Vitae (CV).pdf  # Downloadable PDF
+│   └── John_Britton_CV.pdf                     # Downloadable PDF
 └── src/
     ├── main.tsx              # React entry point
     ├── App.tsx               # Main application component
