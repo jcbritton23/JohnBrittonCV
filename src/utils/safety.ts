@@ -24,38 +24,39 @@ const FORBIDDEN_PATTERNS = [
 
 export const sanitizeQuery = (query: string): SafetyFilter => {
   const originalQuery = query.trim();
-  let sanitizedQuery = originalQuery;
   const warnings: string[] = [];
 
-  if (FORBIDDEN_PATTERNS.some(p => p.test(sanitizedQuery))) {
-    return { isSafe: false, sanitizedQuery, warnings: ["I'm sorry, I can't discuss that topic."] };
-  }
-
-  if (!sanitizedQuery) {
+  if (!originalQuery) {
     return { isSafe: false, sanitizedQuery: '', warnings: ['Please provide a valid question.'] };
   }
 
+  if (FORBIDDEN_PATTERNS.some(p => p.test(originalQuery))) {
+    return { isSafe: false, sanitizedQuery: originalQuery, warnings: ["I'm sorry, I can't discuss that topic."] };
+  }
+
+  let sanitizedQuery = originalQuery;
+
   if (sanitizedQuery.length > 500) {
-    warnings.push('Query is too long');
+    warnings.push('Query is quite long and has been shortened for processing.');
     sanitizedQuery = sanitizedQuery.slice(0, 500);
   }
 
-  if (PROFANITY_WORDS.some(w => sanitizedQuery.toLowerCase().includes(w))) {
-    warnings.push('Query contains inappropriate language');
+  if (PROFANITY_WORDS.length && PROFANITY_WORDS.some(w => sanitizedQuery.toLowerCase().includes(w))) {
+    warnings.push('Some language was softened for clarity.');
     sanitizedQuery = sanitizedQuery.replace(new RegExp(PROFANITY_WORDS.join('|'), 'gi'), '[REDACTED]');
   }
 
   if (TOXIC_PATTERNS.some(p => p.test(sanitizedQuery))) {
-    warnings.push('Query contains potentially harmful content');
+    warnings.push('Potentially harmful phrasing was softened before sending.');
     sanitizedQuery = sanitizedQuery.replace(/kill|harm|hurt|attack|bomb|weapon/gi, '[REDACTED]');
   }
 
   if (PERSONAL_INFO_PATTERNS.some(p => p.test(sanitizedQuery))) {
-    warnings.push('Query requests personal information');
+    warnings.push('Sensitive personal details were removed before processing.');
     sanitizedQuery = sanitizedQuery.replace(/ssn|social security|credit card|cc number|password|bank account/gi, '[REDACTED]');
   }
 
-  return { isSafe: warnings.length === 0, sanitizedQuery, warnings };
+  return { isSafe: true, sanitizedQuery, warnings };
 };
 
 export async function moderateQueryOpenAI(query: string): Promise<{ flagged: boolean; categories?: any; }> {

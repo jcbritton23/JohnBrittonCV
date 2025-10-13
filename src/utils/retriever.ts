@@ -1,4 +1,5 @@
 import { CVData, Chunk } from '../types';
+import { supplementalContext } from '../data/supplementalContext';
 
 // In a production environment, this would use vector embeddings and cosine similarity.
 // For this project, we use a simpler keyword-based retrieval for cost-effectiveness.
@@ -155,12 +156,20 @@ export const searchChunks = (query: string, chunks: Chunk[]): SearchResult => {
 export const getRelevantChunks = async (query: string, cvData: CVData): Promise<Chunk[]> => {
   const chunks = createChunks(cvData);
   const searchResult = searchChunks(query, chunks);
-  
+
   // Apply minimum threshold
   const threshold = 0.5;
-  const relevantChunks = searchResult.chunks.filter(chunk => chunk.score >= threshold);
-  
-  return relevantChunks.slice(0, 6); // Return top 6 most relevant chunks
+  const relevantChunks = searchResult.chunks.filter(chunk => chunk.score >= threshold).slice(0, 6);
+
+  const supplementalChunks: Chunk[] = supplementalContext.map((item, index) => ({
+    id: `supplemental-${index}`,
+    content: item.content,
+    section: `supplemental:${item.category}`,
+    source: item.title,
+    score: 1,
+  }));
+
+  return [...relevantChunks, ...supplementalChunks];
 };
 
 /**
