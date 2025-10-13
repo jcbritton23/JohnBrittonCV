@@ -32,7 +32,7 @@ export async function simpleGenerateAnswer(question: string, cvData: any) {
   }
   const chunks = await getRelevantChunks(question, cvData);
   const context = chunks.map(chunk => chunk.content).join('\n');
-  const sources = chunks.map(chunk => chunk.source);
+  const sources = Array.from(new Set(chunks.map(chunk => chunk.source)));
   const prompt = `You are an expert assistant answering questions about John Britton's CV. Use only the provided context. Cite sources if possible.\n\nContext:\n${context}\n\nUser question: ${question}`;
   const completion = await openai.responses.create({
     model: MODEL,

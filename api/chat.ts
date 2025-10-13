@@ -61,7 +61,7 @@ export default async function handler(req, res) {
   // Retrieve relevant CV context
   const chunks = await getRelevantChunks(safety.sanitizedQuery, cvData);
   const context = chunks.map(chunk => chunk.content).join('\n');
-  const sources = chunks.map(chunk => chunk.source);
+  const sources = Array.from(new Set(chunks.map(chunk => chunk.source)));
 
   // Compose prompt
   const prompt = `You are an expert assistant answering questions about John Britton's CV. Use only the provided context. Cite sources if possible.\n\nContext:\n${context}\n\nUser question: ${safety.sanitizedQuery}`;
