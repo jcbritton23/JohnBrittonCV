@@ -135,8 +135,11 @@ const App: React.FC = () => {
 
   const handleDownloadPDF = () => {
     const link = document.createElement('a');
-    link.href = '/John_Britton_CV.pdf';
+    const pdfPath = `${import.meta.env.BASE_URL}John_Britton_CV.pdf`;
+    link.href = pdfPath;
     link.download = 'John_Britton_CV.pdf';
+    link.rel = 'noopener';
+    link.target = '_blank';
     link.click();
   };
 
