@@ -308,19 +308,31 @@ export interface CVData {
     year: string;
   }[];
   presentations?: {
-    title: string;
-    date: string;
-    venue: string;
-    type: string;
-    authors: string[];
-    category?: string;
-  }[];
-  administrativeRoles?: {
+    professional?: {
+      title: string;
+      date: string;
+      venue: string;
+      type: string;
+      authors: string[];
+      status?: string;
+      note?: string;
+    }[];
+    research?: {
+      title: string;
+      date: string;
+      venue: string;
+      type: string;
+      authors: string[];
+      status?: string;
+      note?: string;
+    }[];
+  };
+  administrativeExperience?: {
     position: string;
     organization: string;
+    location: string;
     dates: string;
-    location?: string;
-    responsibilities?: string[];
+    responsibilities: string[];
   }[];
   technologyTools?: {
     name: string;
