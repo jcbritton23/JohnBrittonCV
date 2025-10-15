@@ -8,6 +8,8 @@ import { OPENAI_MODEL } from '../openaiModel.js';
 const openai = new OpenAI({ apiKey: process.env.VITE_OPENAI_API_KEY });
 const MODEL = OPENAI_MODEL;
 
+logOpenAIModelDiagnostics('api/chat');
+
 const extractResponseText = (response: any): string => {
   if (!response) return '';
   if (typeof response.output_text === 'string' && response.output_text.trim()) {
