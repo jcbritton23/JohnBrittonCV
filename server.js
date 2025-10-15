@@ -4,6 +4,7 @@ import OpenAI from 'openai';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
+import { OPENAI_MODEL, logOpenAIModelDiagnostics } from './openaiModel.js';
 
 dotenv.config();
 
@@ -30,7 +31,11 @@ if (!openAIApiKey) {
   openai = new OpenAI({ apiKey: openAIApiKey });
 }
 
-const MODEL = 'gpt-5-nano';
+const MODEL = OPENAI_MODEL;
+logOpenAIModelDiagnostics('express-server');
+if (openai) {
+  console.log(`OpenAI model configured: ${MODEL}`);
+}
 
 const extractResponseText = (response) => {
   if (!response) return '';

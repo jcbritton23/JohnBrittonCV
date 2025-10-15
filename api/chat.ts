@@ -2,10 +2,13 @@ import OpenAI from 'openai';
 import { sanitizeQuery } from '../src/utils/safety';
 import { getRelevantChunks } from '../src/utils/retriever';
 import cvData from '../cv_json_data.json';
+import { OPENAI_MODEL, logOpenAIModelDiagnostics } from '../openaiModel.js';
 
 // Use only VITE_OPENAI_API_KEY for maximum Vite compatibility
 const openai = new OpenAI({ apiKey: process.env.VITE_OPENAI_API_KEY });
-const MODEL = 'gpt-5-nano';
+const MODEL = OPENAI_MODEL;
+
+logOpenAIModelDiagnostics('api/chat');
 
 const extractResponseText = (response: any): string => {
   if (!response) return '';

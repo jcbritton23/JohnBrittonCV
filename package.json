@@ -18,7 +18,8 @@
     "test:coverage": "vitest --coverage",
     "test:watch": "vitest --watch",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist"
+    "deploy": "gh-pages -d dist",
+    "diagnose:model": "node scripts/inspect-openai-model.js"
   },
   "dependencies": {
     "@radix-ui/react-dialog": "^1.0.5",
