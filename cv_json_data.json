@@ -130,10 +130,10 @@
       "dates": "Aug 2025 - Present",
       "supervisor": "Kathy O'Campo, Ph.D., HSPP",
       "responsibilities": [
-        "Provide weekly peer supervision to second-year doctoral students in their first year of clinical practicum",
-        "Review session recordings, progress notes, and clinical writing to support development in intervention, documentation, and ethical decision-making",
-        "Facilitate reflective case discussions and offer formative feedback on clinical skills and professional identity",
-        "Participate in biweekly group supervision with other peer supervisors to strengthen supervisory practices and align with program expectations"
+        "Provided weekly peer supervision to second-year doctoral students in their first year of clinical practicum",
+        "Reviewed session recordings, progress notes, and clinical writing to support development in intervention, documentation, and ethical decision-making",
+        "Facilitated reflective case discussions and offered formative feedback on clinical skills and professional identity",
+        "Participated in biweekly group supervision with other peer supervisors to strengthen supervisory practices and align with program expectations"
       ]
     },
     {
@@ -276,8 +276,7 @@
       "name": "LocalScribe",
       "date": "Sep 2025",
       "description": "Privacy-first, local AI application (in development) designed to support psychologists in drafting notes and reports",
-      "details": "Built on open-source models adapted for clinical documentation to ensure relevance and PHI protection",
-      "link": ""
+      "details": "Built on open-source models adapted for clinical documentation to ensure relevance and PHI protection"
     },
     {
       "name": "Interactive CV",
@@ -500,176 +499,180 @@
       ]
     }
   ],
-  "administrativeRoles": [
+  "administrativeExperience": [
+    {
+      "position": "Clinic Assistant",
+      "organization": "ISU Department of Psychology",
+      "location": "Terre Haute, IN",
+      "dates": "Aug 2022 - Aug 2023",
+      "responsibilities": [
+        "Conducted phone intakes, including presenting concern, need, and safety/risk assessments to determine appropriate service level and clinician assignment",
+        "Administered computerized psychological assessments (e.g., CPT-3, K-CPT 2, MMPI-2-RF)",
+        "Communicated with clients and families to coordinate scheduling, clarify clinic procedures, and address service needs",
+        "Assisted in providing referrals and community resource information to support continuity of care"
+      ]
+    },
     {
       "position": "Quality Improvement Associate",
       "organization": "Board of Child Care, Caminos Program",
+      "location": "Baltimore, MD",
       "dates": "June 2021 - May 2022",
       "responsibilities": [
         "Supported reunification of unaccompanied migrant youth with sponsors in accordance with federal guidelines",
         "Monitored compliance with sexual abuse prevention protocols and responded to safety concerns by reviewing incident reports and video documentation",
         "Collaborated with interpreters to support Spanish- and Arabic-speaking youth during sensitive reporting and documentation processes",
         "Developed internal policies, COVID-19 procedures, and licensing reports in alignment with federal, state, and agency standards"
-      ],
-      "location": "Baltimore, MD"
+      ]
     }
   ],
-  "presentations": [
-    {
-      "title": "Beyond stage fright - Addressing music performance anxiety in jazz students",
-      "date": "accepted, January 2026",
-      "venue": "Jazz Education Network Annual Conference, New Orleans, LA",
-      "type": "Conference presentation",
-      "authors": [
-        "Britton, J.",
-        "Johnson, T."
-      ],
-      "category": "research"
-    },
-    {
-      "title": "Understanding suicide grief: Supporting survivors through complex loss",
-      "date": "scheduled, November 2025",
-      "venue": "International Survivors of Suicide Loss Day, American Foundation for Suicide Prevention, Sullivan, IN (Invited community presentation)",
-      "type": "Professional presentation",
-      "authors": [
-        "Britton, J."
-      ],
-      "category": "professional"
-    },
-    {
-      "title": "Upward and downward social comparison when listening to sad music",
-      "date": "2023, April",
-      "venue": "Midwestern Psychological Association Conference, Chicago, IL",
-      "type": "Poster presentation",
-      "authors": [
-        "Britton, J."
-      ],
-      "category": "research"
-    },
-    {
-      "title": "Potential links between sad music listening, rumination, and depression",
-      "date": "2023, April",
-      "venue": "Midwestern Psychological Association Conference, Chicago, IL",
-      "type": "Poster presentation",
-      "authors": [
-        "Gelfand, A.",
-        "Johnson, T.",
-        "Todd, B.",
-        "Bedore, P.",
-        "Britton, J."
-      ],
-      "category": "research"
-    },
-    {
-      "title": "An introduction to mindfulness using music listening and instrument playing",
-      "date": "2016, March",
-      "venue": "SER American Music Therapy Conference, Macon, GA",
-      "type": "Conference presentation",
-      "authors": [
-        "Britton, J."
-      ],
-      "category": "research"
-    },
-    {
-      "title": "The effect of instrumental improvisation on selective attention in typical adults",
-      "date": "2015, March",
-      "venue": "SER American Music Therapy Conference, Columbia, SC",
-      "type": "Poster presentation",
-      "authors": [
-        "Britton, J."
-      ],
-      "category": "research"
-    },
-    {
-      "title": "Use of AI: Practical and ethical considerations",
-      "date": "2025, September",
-      "venue": "Clients & Science Seminar Series, Indiana State University, Terre Haute, IN",
-      "type": "Academic presentation",
-      "authors": [
-        "Britton, J."
-      ],
-      "category": "professional"
-    },
-    {
-      "title": "Generative AI quick start for clinicians",
-      "date": "2025, September",
-      "venue": "Murphy, Urban, & Associates, Terre Haute, IN",
-      "type": "Professional presentation",
-      "authors": [
-        "Britton, J."
-      ],
-      "category": "professional"
-    },
-    {
-      "title": "AI Hackathon: Exploring Clinical Use Cases Across the Psy.D. Program",
-      "date": "2025, August",
-      "venue": "Indiana State University Department of Psychology, Terre Haute, IN",
-      "type": "Academic presentation",
-      "authors": [
-        "Britton, J."
-      ],
-      "category": "professional"
-    },
-    {
-      "title": "AI in Graduate Training: Risks, Tools, and Opportunities",
-      "date": "2025, August",
-      "venue": "Graduate Assistant Orientation, Indiana State University, Terre Haute, IN",
-      "type": "Panel presentation",
-      "authors": [
-        "Britton, J."
-      ],
-      "category": "professional"
-    },
-    {
-      "title": "Finding strength and balance: Addressing burnout in Healthcare",
-      "date": "2025, January",
-      "venue": "Clay City Center for Family Medicine, Clay City, IN",
-      "type": "Professional presentation",
-      "authors": [
-        "Britton, J."
-      ],
-      "category": "professional"
-    },
-    {
-      "title": "Working with the suicidal client",
-      "date": "2018, April",
-      "venue": "Star Center Music Therapy Conference, Jackson, TN",
-      "type": "Conference presentation",
-      "authors": [
-        "Britton, J."
-      ],
-      "category": "professional"
-    },
-    {
-      "title": "\"Big T\" and \"little t\" trauma",
-      "date": "2017, May",
-      "venue": "Lipscomb University Wellness 66 Seminar, Nashville, TN",
-      "type": "Professional presentation",
-      "authors": [
-        "Killingsworth, A.",
-        "Britton, J."
-      ],
-      "category": "professional"
-    },
-    {
-      "title": "Music and mindfulness",
-      "date": "2016, May",
-      "venue": "Lipscomb University Wellness 66 Seminar, Nashville, TN",
-      "type": "Professional presentation",
-      "authors": [
-        "Britton, J."
-      ],
-      "category": "professional"
-    },
-    {
-      "title": "Music and mindfulness",
-      "date": "2015, October",
-      "venue": "University of Miami medical campus staff and multiple sclerosis support group, Miami, FL",
-      "type": "Professional presentation",
-      "authors": [
-        "Britton, J."
-      ],
-      "category": "professional"
-    }
-  ]
+  "presentations": {
+    "professional": [
+      {
+        "title": "Beyond stage fright - Addressing music performance anxiety in jazz students",
+        "date": "accepted, January 2026",
+        "venue": "Jazz Education Network Annual Conference, New Orleans, LA",
+        "type": "Conference presentation",
+        "authors": [
+          "Britton, J.",
+          "Johnson, T."
+        ],
+        "status": "accepted"
+      },
+      {
+        "title": "Understanding suicide grief: Supporting survivors through complex loss",
+        "date": "scheduled, November 2025",
+        "venue": "International Survivors of Suicide Loss Day, American Foundation for Suicide Prevention, Sullivan, IN",
+        "type": "Professional presentation",
+        "authors": [
+          "Britton, J."
+        ],
+        "status": "scheduled",
+        "note": "Invited community presentation"
+      },
+      {
+        "title": "Use of AI: Practical and ethical considerations",
+        "date": "2025, September",
+        "venue": "Clients & Science Seminar Series, Indiana State University, Terre Haute, IN",
+        "type": "Academic presentation",
+        "authors": [
+          "Britton, J."
+        ]
+      },
+      {
+        "title": "Generative AI quick start for clinicians",
+        "date": "2025, September",
+        "venue": "Murphy, Urban, & Associates, Terre Haute, IN",
+        "type": "Professional presentation",
+        "authors": [
+          "Britton, J."
+        ]
+      },
+      {
+        "title": "AI Hackathon: Exploring Clinical Use Cases Across the Psy.D. Program",
+        "date": "2025, August",
+        "venue": "Indiana State University Department of Psychology, Terre Haute, IN",
+        "type": "Academic presentation",
+        "authors": [
+          "Britton, J."
+        ]
+      },
+      {
+        "title": "AI in Graduate Training: Risks, Tools, and Opportunities",
+        "date": "2025, August",
+        "venue": "Graduate Assistant Orientation, Indiana State University, Terre Haute, IN",
+        "type": "Panel presentation",
+        "authors": [
+          "Britton, J."
+        ]
+      },
+      {
+        "title": "Finding strength and balance: Addressing burnout in Healthcare",
+        "date": "2025, January",
+        "venue": "Clay City Center for Family Medicine, Clay City, IN",
+        "type": "Professional presentation",
+        "authors": [
+          "Britton, J."
+        ]
+      },
+      {
+        "title": "Working with the suicidal client",
+        "date": "2018, April",
+        "venue": "Star Center Music Therapy Conference, Jackson, TN",
+        "type": "Conference presentation",
+        "authors": [
+          "Britton, J."
+        ]
+      },
+      {
+        "title": "\"Big T\" and \"little t\" trauma",
+        "date": "2017, May",
+        "venue": "Lipscomb University Wellness 66 Seminar, Nashville, TN",
+        "type": "Professional presentation",
+        "authors": [
+          "Killingsworth, A.",
+          "Britton, J."
+        ]
+      },
+      {
+        "title": "Music and mindfulness",
+        "date": "2016, May",
+        "venue": "Lipscomb University Wellness 66 Seminar, Nashville, TN",
+        "type": "Professional presentation",
+        "authors": [
+          "Britton, J."
+        ]
+      },
+      {
+        "title": "Music and mindfulness",
+        "date": "2015, October",
+        "venue": "University of Miami medical campus staff and multiple sclerosis support group, Miami, FL",
+        "type": "Professional presentation",
+        "authors": [
+          "Britton, J."
+        ]
+      }
+    ],
+    "research": [
+      {
+        "title": "Upward and downward social comparison when listening to sad music",
+        "date": "2023, April",
+        "venue": "Midwestern Psychological Association Conference, Chicago, IL",
+        "type": "Poster presentation",
+        "authors": [
+          "Britton, J."
+        ]
+      },
+      {
+        "title": "Potential links between sad music listening, rumination, and depression",
+        "date": "2023, April",
+        "venue": "Midwestern Psychological Association Conference, Chicago, IL",
+        "type": "Poster presentation",
+        "authors": [
+          "Gelfand, A.",
+          "Johnson, T.",
+          "Todd, B.",
+          "Bedore, P.",
+          "Britton, J."
+        ]
+      },
+      {
+        "title": "An introduction to mindfulness using music listening and instrument playing",
+        "date": "2016, March",
+        "venue": "SER American Music Therapy Conference, Macon, GA",
+        "type": "Conference presentation",
+        "authors": [
+          "Britton, J."
+        ]
+      },
+      {
+        "title": "The effect of instrumental improvisation on selective attention in typical adults",
+        "date": "2015, March",
+        "venue": "SER American Music Therapy Conference, Columbia, SC",
+        "type": "Poster presentation",
+        "authors": [
+          "Britton, J."
+        ]
+      }
+    ]
+  }
 }

@@ -71,14 +71,26 @@ interface CVData {
     year: string;
     award: string;
   }>;
-  presentations?: Array<{
-    title: string;
-    date: string;
-    venue: string;
-    type: string;
-    authors: string[];
-    category?: string;
-  }>;
+  presentations?: {
+    professional?: Array<{
+      title: string;
+      date: string;
+      venue: string;
+      type: string;
+      authors: string[];
+      status?: string;
+      note?: string;
+    }>;
+    research?: Array<{
+      title: string;
+      date: string;
+      venue: string;
+      type: string;
+      authors: string[];
+      status?: string;
+      note?: string;
+    }>;
+  };
   technologyTools?: Array<{
     name: string;
     date: string;
@@ -107,7 +119,7 @@ interface CVData {
     dates: string;
     activities: string[];
   }>;
-  administrativeRoles?: Array<{
+  administrativeExperience?: Array<{
     position: string;
     organization: string;
     location: string;

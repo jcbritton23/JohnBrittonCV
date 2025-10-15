@@ -1,6 +1,16 @@
 import React from 'react';
 import { CVData, CVContentProps } from '../types';
 
+type PresentationItem = {
+  title: string;
+  date: string;
+  venue: string;
+  type: string;
+  authors: string[];
+  status?: string;
+  note?: string;
+};
+
 const CVContent: React.FC<CVContentProps> = ({ cvData }) => {
   if (!cvData) {
     return (
@@ -23,6 +33,23 @@ const CVContent: React.FC<CVContentProps> = ({ cvData }) => {
       {date}
     </div>
   );
+
+  const renderPresentationItems = (items: PresentationItem[]) => {
+    return items.map((pres, index) => (
+      <div key={index} className="mb-4">
+        <div className="text-gray-700 text-sm leading-relaxed">
+          <span className="font-normal">
+            {pres.authors && pres.authors.join(', ')} ({pres.date}). <em>{pres.title}</em>. {pres.type}, {pres.venue}
+            {pres.note ? ` (${pres.note})` : ''}.
+          </span>
+        </div>
+      </div>
+    ));
+  };
+
+  const professionalPresentations: PresentationItem[] = cvData.presentations?.professional ?? [];
+  const researchPresentations: PresentationItem[] = cvData.presentations?.research ?? [];
+  const hasPresentations = professionalPresentations.length > 0 || researchPresentations.length > 0;
 
   return (
     <div className="bg-white rounded-lg shadow-sm p-8 print:shadow-none print:p-0 cv-content max-w-4xl mx-auto min-h-screen">
@@ -335,21 +362,24 @@ const CVContent: React.FC<CVContentProps> = ({ cvData }) => {
       )}
 
       {/* Presentations */}
-      {cvData.presentations && cvData.presentations.length > 0 && (
-      <section id="presentations" className="mb-8">
-        <h2 className="text-xl font-bold text-gray-900 mb-4 border-b border-gray-300 pb-1">
-          Presentations
-        </h2>
-        {cvData.presentations.map((pres, index) => (
-          <div key={index} className="mb-4">
-            <div className="text-gray-700 text-sm leading-relaxed">
-              <span className="font-normal">
-                {pres.authors && pres.authors.join(', ')} ({pres.date}). <em>{pres.title}</em>. {pres.type}, {pres.venue}.
-              </span>
+      {hasPresentations && (
+        <section id="presentations" className="mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-4 border-b border-gray-300 pb-1">
+            Presentations
+          </h2>
+          {professionalPresentations.length > 0 && (
+            <div className="mb-6">
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Professional</h3>
+              {renderPresentationItems(professionalPresentations)}
             </div>
-          </div>
-        ))}
-      </section>
+          )}
+          {researchPresentations.length > 0 && (
+            <div>
+              <h3 className="text-lg font-semibold text-gray-800 mb-2">Research</h3>
+              {renderPresentationItems(researchPresentations)}
+            </div>
+          )}
+        </section>
       )}
 
       {/* Professional Memberships */}
@@ -378,32 +408,30 @@ const CVContent: React.FC<CVContentProps> = ({ cvData }) => {
         ))}
       </section>
 
-      {/* Administrative Roles */}
-      {cvData.administrativeRoles && cvData.administrativeRoles.length > 0 && (
-      <section id="administrativeRoles" className="mb-8">
-        <h2 className="text-xl font-bold text-gray-900 mb-4 border-b border-gray-300 pb-1">
-          Administrative Roles
-        </h2>
-        {cvData.administrativeRoles.map((exp, index) => (
-          <div key={index} className="mb-6">
-            <div className="flex justify-between items-start mb-2">
-              <div>
-                <div className="font-semibold text-gray-900">{exp.position}</div>
-                <div className="text-gray-700">{exp.organization}</div>
-                {exp.location && (
+      {/* Administrative Experience */}
+      {cvData.administrativeExperience && cvData.administrativeExperience.length > 0 && (
+        <section id="administrativeExperience" className="mb-8">
+          <h2 className="text-xl font-bold text-gray-900 mb-4 border-b border-gray-300 pb-1">
+            Administrative Experience
+          </h2>
+          {cvData.administrativeExperience.map((exp, index) => (
+            <div key={index} className="mb-6">
+              <div className="flex justify-between items-start mb-2">
+                <div>
+                  <div className="font-semibold text-gray-900">{exp.position}</div>
+                  <div className="text-gray-700">{exp.organization}</div>
                   <div className="text-gray-600 text-sm">{exp.location}</div>
-                )}
+                </div>
+                {renderDateRight(exp.dates)}
               </div>
-              {renderDateRight(exp.dates)}
+              {exp.responsibilities && exp.responsibilities.length > 0 && (
+                <ul className="cv-bullet-list pl-6">
+                  {renderBulletPoints(exp.responsibilities)}
+                </ul>
+              )}
             </div>
-            {exp.responsibilities && exp.responsibilities.length > 0 && (
-              <ul className="cv-bullet-list pl-6">
-                {renderBulletPoints(exp.responsibilities)}
-              </ul>
-            )}
-          </div>
-        ))}
-      </section>
+          ))}
+        </section>
       )}
 
       {/* Technology & Tools */}
