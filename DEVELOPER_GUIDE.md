@@ -491,6 +491,10 @@ ENABLE_QUERY_CLASSIFICATION=true     # smart routing based on query type
 ENABLE_DOCUMENT_AWARENESS=true       # different handling per doc type
 ```
 
+> **Important:** `openaiModel.js` reads several environment variables (`OPENAI_RESPONSES_MODEL`, `OPENAI_MODEL`, `VITE_OPENAI_MODEL`,
+> etc.), but any value that does not start with `gpt-5-nano` is ignored and the runtime falls back to `gpt-5-nano`. This guarantees
+> the production system cannot silently drift back to GPT-3.5 or any other legacy model.
+
 ### 10.3 Implementation Pipeline
 
 1. **Embeddings Precompute:** Run once offline to embed `resume.json` bullets + supplemental docs; store vectors in a JSON or local vector-store.
@@ -505,7 +509,7 @@ ENABLE_DOCUMENT_AWARENESS=true       # different handling per doc type
 4. **Model Runner (utils/chat.ts):**
    * GPT-5-nano wrapper around the OpenAI API
    * Applies stage-specific prompts (summary vs final answer)
-   * Returns `{ content, modelUsed: 'gpt-5-nano' }` for debugging
+   * Pulls its configuration from `openaiModel.js`, ensuring the enforced GPT-5-nano default is always used
 
 5. **RAG Orchestration (utils/answer.ts):**
    * Combines retrieval, safety, and model chain
