@@ -21,7 +21,15 @@ try {
   console.error('Failed to load CV data:', err.message);
 }
 
-const openai = new OpenAI({ apiKey: process.env.VITE_OPENAI_API_KEY });
+const openAIApiKey = process.env.VITE_OPENAI_API_KEY || process.env.OPENAI_API_KEY;
+let openai = null;
+
+if (!openAIApiKey) {
+  console.warn('OpenAI API key not found. Chat assistant will be disabled.');
+} else {
+  openai = new OpenAI({ apiKey: openAIApiKey });
+}
+
 const MODEL = 'gpt-5-nano';
 
 const extractResponseText = (response) => {
@@ -181,6 +189,10 @@ const sanitizeQuery = (query) => {
 
 // --- Chat endpoint ---
 app.post('/api/chat', async (req, res) => {
+  if (!openai) {
+    return res.json({ answer: 'The AI assistant is currently unavailable because no API key is configured.' });
+  }
+
   try {
     const userMessage = req.body.message || 'Hello';
     const safety = sanitizeQuery(userMessage);
