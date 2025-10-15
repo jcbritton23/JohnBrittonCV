@@ -72,7 +72,7 @@ const App: React.FC = () => {
         'education', 'supervisedClinicalExperience', 'evidenceBasedProtocols', 
         'supervisoryExperience', 'additionalClinicalExperience', 'specialProjects', 
         'researchExperience', 'teachingExperience', 'honorsAndAwards', 
-        'presentations', 'professionalMemberships', 'administrativeRoles', 
+        'presentations', 'professionalMemberships', 'administrativeExperience',
         'technologyTools', 'trainingAndEducation', 'communityService', 'references'
       ];
       
@@ -110,7 +110,7 @@ const App: React.FC = () => {
     { id: 'teachingExperience', title: 'Teaching Experience', icon: 'presentation', order: 7 },
     { id: 'honorsAndAwards', title: 'Honors & Awards', icon: 'trophy', order: 8 },
     { id: 'presentations', title: 'Presentations', icon: 'presentation', order: 9 },
-    { id: 'administrativeRoles', title: 'Administrative Roles', icon: 'briefcase', order: 10 },
+    { id: 'administrativeExperience', title: 'Administrative Experience', icon: 'briefcase', order: 10 },
     { id: 'technologyTools', title: 'Technology Tools', icon: 'certificate', order: 11 },
     { id: 'professionalMemberships', title: 'Professional Memberships', icon: 'network', order: 12 },
     { id: 'trainingAndEducation', title: 'Training & Education', icon: 'certificate', order: 13 },
