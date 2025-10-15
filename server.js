@@ -4,7 +4,7 @@ import OpenAI from 'openai';
 import dotenv from 'dotenv';
 import fs from 'fs';
 import path from 'path';
-import { OPENAI_MODEL, logOpenAIModelDiagnostics } from './openaiModel.js';
+import { OPENAI_MODEL } from './openaiModel.js';
 
 dotenv.config();
 
@@ -32,7 +32,6 @@ if (!openAIApiKey) {
 }
 
 const MODEL = OPENAI_MODEL;
-logOpenAIModelDiagnostics('express-server');
 if (openai) {
   console.log(`OpenAI model configured: ${MODEL}`);
 }

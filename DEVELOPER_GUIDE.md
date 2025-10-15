@@ -495,11 +495,6 @@ ENABLE_DOCUMENT_AWARENESS=true       # different handling per doc type
 > etc.), but any value that does not start with `gpt-5-nano` is ignored and the runtime falls back to `gpt-5-nano`. This guarantees
 > the production system cannot silently drift back to GPT-3.5 or any other legacy model.
 
-> **Diagnosing unexpected GPT-3.5 usage:** Run `npm run diagnose:model` (or `node scripts/inspect-openai-model.js`) to print the
-> model candidates discovered at runtime, the source of the first non-empty value, and whether the enforcement fell back to the
-> default. This will show which environment variable is still advertising `gpt-3.5-turbo`, explaining any lingering dashboard
-> entries.
-
 ### 10.3 Implementation Pipeline
 
 1. **Embeddings Precompute:** Run once offline to embed `resume.json` bullets + supplemental docs; store vectors in a JSON or local vector-store.
