@@ -1,7 +1,8 @@
 import OpenAI from "openai";
+import { OPENAI_MODEL } from "../../openaiModel.js";
 
 const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
-const MODEL = 'gpt-5-nano';
+const MODEL = OPENAI_MODEL;
 
 const extractResponseText = (response: any): string => {
   if (!response) return '';
