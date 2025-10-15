@@ -2,7 +2,7 @@ import OpenAI from 'openai';
 import { sanitizeQuery } from '../src/utils/safety';
 import { getRelevantChunks } from '../src/utils/retriever';
 import cvData from '../cv_json_data.json';
-import { OPENAI_MODEL } from '../openaiModel.js';
+import { OPENAI_MODEL, logOpenAIModelDiagnostics } from '../openaiModel.js';
 
 // Use only VITE_OPENAI_API_KEY for maximum Vite compatibility
 const openai = new OpenAI({ apiKey: process.env.VITE_OPENAI_API_KEY });
