@@ -22,7 +22,41 @@ export const createChunks = (cvData: CVData): Chunk[] => {
   };
 
   Object.entries(cvData as Record<string, any>).forEach(([section, value]) => {
-    if (Array.isArray(value)) {
+    if (section === 'essayInsights' && Array.isArray(value)) {
+      value.forEach((item: any, itemIndex: number) => {
+        const baseMetadata: string[] = [];
+        if (item.title) baseMetadata.push(`title: ${item.title}`);
+        if (item.category) baseMetadata.push(`category: ${item.category}`);
+        if (Array.isArray(item.keywords) && item.keywords.length > 0) {
+          baseMetadata.push(`keywords: ${item.keywords.join(', ')}`);
+        }
+
+        const title = item.title || `Essay Insight ${itemIndex + 1}`;
+        const paragraphs = typeof item.content === 'string'
+          ? item.content.split(/\n\s*\n/).map((paragraph: string) => paragraph.trim()).filter(Boolean)
+          : [];
+
+        if (paragraphs.length === 0) {
+          if (typeof item.content === 'string' && item.content.trim()) {
+            addChunk([...baseMetadata, `content: ${item.content}`].join('. '), section, title);
+          }
+          return;
+        }
+
+        paragraphs.forEach((paragraph: string, paragraphIndex: number) => {
+          const label = paragraphs.length > 1
+            ? `${title} (Part ${paragraphIndex + 1})`
+            : title;
+          addChunk([...baseMetadata, `narrative: ${paragraph}`].join('. '), section, label);
+        });
+      });
+    } else if (section === 'personalInsights' && value && typeof value === 'object') {
+      Object.entries(value).forEach(([key, insight]) => {
+        if (typeof insight === 'string' && insight.trim()) {
+          addChunk(`${key}: ${insight}`, section, `${section}:${key}`);
+        }
+      });
+    } else if (Array.isArray(value)) {
       value.forEach((item: any) => {
         const source = item.organization || item.title || item.name || section;
         const parts: string[] = [];
@@ -33,7 +67,7 @@ export const createChunks = (cvData: CVData): Chunk[] => {
         addChunk(parts.join('. '), section, source);
       });
     } else if (typeof value === 'object' && value !== null) {
-      const parts = Object.entries(value).map(([k, v]) => `${k}: ${v}`);
+      const parts = Object.entries(value).map(([k, v]) => `${k}: ${Array.isArray(v) ? v.join(', ') : v}`);
       addChunk(parts.join('. '), section, section);
     }
   });

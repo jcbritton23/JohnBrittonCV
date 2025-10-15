@@ -229,6 +229,16 @@ export interface Chunk {
   score: number;
 }
 
+export interface EssayInsight {
+  id: string;
+  title: string;
+  category: string;
+  keywords: string[];
+  content: string;
+}
+
+export type PersonalInsights = Record<string, string>;
+
 export interface SafetyFilter {
   isSafe: boolean;
   sanitizedQuery: string;
@@ -244,6 +254,8 @@ export interface CVData {
     email: string;
     interactiveCV?: string;
   };
+  essayInsights?: EssayInsight[];
+  personalInsights?: PersonalInsights;
   education: {
     degree: string;
     institution: string;
